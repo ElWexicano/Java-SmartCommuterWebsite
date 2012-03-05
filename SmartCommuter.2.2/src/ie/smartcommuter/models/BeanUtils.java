@@ -7,7 +7,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Map;
 
 public class BeanUtils {
 	
@@ -159,7 +158,31 @@ public class BeanUtils {
 	}
 	
 	
-	
+	/**
+	 * This method is used to return the API Service for
+	 * a station, which will be used to get the latest
+	 * real time data for that station.
+	 * @param station
+	 * @return
+	 */
+	public static String getStationAPIServiceType(Station station) {
+
+		String companyName = station.getCompany().getName();
+		
+		if(companyName.equals("Bus Éireann")) {
+			return "BusEireann";
+		} else if(companyName.equals("Dublin Bus")) {
+			return "DublinBus";
+		} else if(companyName.equals("Irish Rail")) {
+			return "IrishRail";
+		} else if(companyName.equals("Luas")) {
+			return "Luas";
+		} else if(companyName.equals("JJ Kavanagh & Sons")) {
+			return "JJKavanagh";
+		}
+		
+		return null;
+	}
 
 	
 }

@@ -23,9 +23,9 @@
 				
 				<div class="menubar">
 					<ul>
-						<li class="active"><a href="companiesAdmin">Companies</a></li>
-						<li><a href="stationsAdmin">Stations</a></li>
-						<li><a href="exitAdmin">Exit</a></li>
+						<li class="active"><a href="adminCompanies">Companies</a></li>
+						<li><a href="adminStations">Stations</a></li>
+						<li><a href="adminExit">Exit</a></li>
 					</ul>
 				</div>
 				
@@ -57,7 +57,7 @@
 					
 					<div class="search">
 						<div id="header">Search Companies</div>
-						<form method="post" action="companySearch" onsubmit="return validateCompanySearch()">
+						<form method="post" action="adminCompanySearch" onsubmit="return validateCompanySearch()">
 							<fieldset>
 								<label for="companyname">Company Name</label>
 								<input class="inputtext" type="text" name="companyname" id="companyname" value="Type the Company Name" onfocus="toggleSearchInfoMessage()" onblur="toggleSearchInfoMessage()" />

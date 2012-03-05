@@ -152,8 +152,7 @@
 						<li><a href="index.html">Home</a></li>
 						<li><a href="client">Client</a></li>
 						<li><a href="contact">Contact</a></li>
-						<li><a href="#">Site Map</a></li>
-						<li><a href="#">Admin</a></li>
+						<li><a href="admin">Admin</a></li>
 					</ul>
 				</div>
 			

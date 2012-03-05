@@ -192,7 +192,6 @@ function viewStation(stationId) {
     
     document.body.appendChild(form);
     form.submit();
-
 }
 
 /**

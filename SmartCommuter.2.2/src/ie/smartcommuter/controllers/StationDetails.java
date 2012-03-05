@@ -1,5 +1,6 @@
 package ie.smartcommuter.controllers;
 
+import ie.smartcommuter.client.RealTimeClient;
 import ie.smartcommuter.models.BeanUtils;
 import ie.smartcommuter.models.Station;
 import ie.smartcommuter.models.StationData;
@@ -41,6 +42,10 @@ public class StationDetails extends HttpServlet {
             }
                 
 			// Next get the real time data for the station!
+
+//            StationData stationData = 
+//            		RealTimeClient.getStationData(RealTimeClient.getStub(),"", 
+//            				station.getApiCode());
 			
 			HttpSession mySession = request.getSession(true);
 			recentlyViewedStations = (List<Station>) mySession.getAttribute("recentlyViewedStations");
@@ -55,10 +60,7 @@ public class StationDetails extends HttpServlet {
 			request.setAttribute("station", station);
 		}
 
-
-		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(address);
 		dispatcher.forward(request, response);		
 	}
-	
 }
