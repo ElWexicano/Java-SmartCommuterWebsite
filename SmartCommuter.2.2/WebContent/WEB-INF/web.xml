@@ -47,12 +47,12 @@
   </servlet-mapping>
   <servlet>
     <description></description>
-    <display-name>ClientView</display-name>
-    <servlet-name>ClientView</servlet-name>
-    <servlet-class>ie.smartcommuter.controllers.ClientView</servlet-class>
+    <display-name>Client</display-name>
+    <servlet-name>Client</servlet-name>
+    <servlet-class>ie.smartcommuter.controllers.Client</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>ClientView</servlet-name>
+    <servlet-name>Client</servlet-name>
     <url-pattern>/client</url-pattern>
   </servlet-mapping>
 </web-app>

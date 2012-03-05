@@ -14,10 +14,9 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 
-public class ClientView extends HttpServlet {
+public class Client extends HttpServlet {
 	
 	private List<Station> recentlyViewedStations = new ArrayList<Station>();
-	
 
 	@SuppressWarnings("unchecked")
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
