@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" 
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+id="WebApp_ID" version="2.5" metadata-complete="false">
+  <display-name>SmartCommuter.2.2</display-name>
+  <description>SmartCommuter Web Client</description>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>ContactUs</display-name>
+    <servlet-name>ContactUs</servlet-name>
+    <servlet-class>ie.smartcommuter.controllers.ContactUs</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContactUs</servlet-name>
+    <url-pattern>/contact</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ContactUsSubmit</display-name>
+    <servlet-name>ContactUsSubmit</servlet-name>
+    <servlet-class>ie.smartcommuter.controllers.ContactUsSubmit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContactUsSubmit</servlet-name>
+    <url-pattern>/contactUs</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>StationSearch</display-name>
+    <servlet-name>StationSearch</servlet-name>
+    <servlet-class>ie.smartcommuter.controllers.StationSearch</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StationSearch</servlet-name>
+    <url-pattern>/search</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>StationDetails</display-name>
+    <servlet-name>StationDetails</servlet-name>
+    <servlet-class>ie.smartcommuter.controllers.StationDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StationDetails</servlet-name>
+    <url-pattern>/station</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ClientView</display-name>
+    <servlet-name>ClientView</servlet-name>
+    <servlet-class>ie.smartcommuter.controllers.ClientView</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ClientView</servlet-name>
+    <url-pattern>/client</url-pattern>
+  </servlet-mapping>
+</web-app>

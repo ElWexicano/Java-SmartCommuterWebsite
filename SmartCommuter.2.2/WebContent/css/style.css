@@ -1,0 +1,587 @@
+@charset "utf-8";
+/*
+	Design by Shane Doyle <iamshanedoyle@ubuntu>
+*/
+
+@import url("fonts/texgyre.css");
+
+html, body {
+	height			: 100%;
+	padding			: 0;
+	margin			: 0;
+	color			: #4d4d4d;
+	font			: normal 13px "Helvetica Neue", Helvetica, Verdana, sans-serif;
+	background		: url(bg.jpg);
+}
+
+.main {
+	min-height		: 100%;
+}
+
+.content {
+	overflow		: auto;
+	padding-bottom	: 120px;
+} 
+
+
+h1, h2 {
+	font-family		: 'TeXGyreAdventor', Arial, sans-serif;
+	margin-bottom	: -5px;
+}
+
+/* Start of Header Styles */
+.header {
+	width			: 100%;
+	height			: 50px;
+	background		: #363737;
+	border-bottom	: 1px solid #000;
+	font-family		: 'TeXGyreAdventor', Arial, sans-serif;
+}
+
+.headerholder {
+	height			: 50px;
+	width			: 920px; 
+	margin			: 0 auto; 
+}
+
+.logo {
+	float			: left;
+	margin-top		: 2px;
+}
+
+.logo img {
+	margin-top		: 6px;
+	float			: left;
+}
+
+.title {
+	color			: #fff;
+	font-size		: 30px;
+}
+
+.motto {
+	color			: #90b831;
+}
+
+.menubar {
+	color			: #fff;
+	float			: right;
+	padding			: 13px 0;
+}
+
+.menubar ul{
+    list-style		: none outside none;
+    margin			: 0;
+    padding			: 0;
+}
+
+.menubar li {
+	list-style		: none;
+	float			: left;
+	padding			: 0 15px;
+	font			: bold 15px 'TeXGyreAdventor', Arial, sans-serif; 
+}
+
+.menubar li a {
+    color			: #ccc;
+    display			: block;
+    float			: left;
+    text-decoration	: none;
+
+}
+
+.menubar li a:hover {
+    color			: #7EAE1C;
+    text-decoration : none
+}
+
+.menubar li.active a {
+    color			: #fff;
+}
+/* End of Header Styles */
+
+
+/* Start of Footer Styles */
+.footer {
+	position		: relative;
+	margin-top		: -170px;
+	height			: 190px;
+	clear			: both;
+	background		: #363737;
+	border-top  	: 1px solid #aaa;
+	padding-bottom	: 10px;
+	font			: normal 12px 'TeXGyreAdventor', Arial, sans-serif;
+} 
+
+.footerholder {
+	width			: 920px; 
+	margin			: 0 auto; 
+	height			: 40px;
+	padding			: 0;	
+}
+
+.sitedetails {
+	width			: 100%;
+	height			: 120px;
+	margin			: 0 0 10px 0;
+}
+
+.sitedetails h4 {
+	margin-bottom	: -5px;
+	color			: #7EAE1C;
+}
+
+.sitedetails ul {
+	padding			: 0 15px;
+}
+
+.sitedetails li {
+	list-style		: arrows;
+}
+
+.sitedetails a {
+	color			: #ccc;
+	text-decoration	: none;
+	outline			: 0;
+}
+
+.sitedetails a:hover {
+	color			: #fff;
+}
+
+#aboutsite, #navsite, #usefullinks, #socialnetworks {
+	float			: left;
+	width			: 100px;
+	color			: #ccc;
+	margin-left		: 20px;
+
+}
+
+#aboutsite {
+	width			: 400px;
+	margin-left		: 0;
+}
+
+#socialnetworks {
+	width			: 160px;
+}
+
+#socialnetworks img {
+	opacity			: 0.8;
+	width			: 30px;
+	margin-right	: 6px;
+}
+
+#socialnetworks img:hover {
+	opacity			: 1;
+	cursor			: pointer;
+}
+
+#usefullinks {
+	width			: 180px;
+}
+
+.author {
+	color			: #90b831;
+	text-align		: center;
+	width			: 100%;
+}
+
+.author span {
+	color			: #78bbe6;
+	font-size		: 16px;
+}
+/* End of Footer Styles */
+
+
+/* Start of Banner */
+#sitedesc {
+	width			: 530px;
+	float			: left;
+	padding			: 0px 0;
+	height			: 170px;
+	font-family		: 'TeXGyreAdventor', Arial, sans-serif;
+}
+
+#sitebanner {
+	float			: left;
+	width			: 380px;
+	height			: 170px;
+}
+
+#sitedesc h1 {
+	margin-top		: 5px;
+	font-size		: 22px;
+}
+
+#sitedesc p {
+	font-size		: 18px;
+}
+/* End of Banner */
+
+
+
+/* Start of Content Styles */
+.contentholder {
+	width			: 920px; 
+	margin			: 0 auto; 
+	min-height		: 100%;
+	padding			: 0 20px 60px 20px;
+}
+
+#othercontent {
+	width			: 100%;
+}	
+
+.transportlogo {
+	width			: 140px;
+	background		: #fff;
+	padding			: 5px;
+	border			: 1px solid #ccc;
+	margin-right	: 35px;
+}
+
+hr {
+	margin			: 20px 0;
+}
+
+/* End of Content Styles */
+
+
+
+
+/* Start of Client Styles */
+#webclient {
+	width			: 100%;
+	height			: 530px;
+}
+
+#webclient .trail {
+	width			: 100%;
+	margin-bottom	: 5px;
+}
+
+#webclient .search {
+	width			: 306px;
+	height			: 219px;
+	float			: left;
+	margin-bottom	: 15px;
+}
+
+#webclient .recent {
+	width			: 306px;
+	height			: 280px;
+	float			: left;
+}
+
+#webclient .results {
+	width			: 586px;
+	height			: 520px;
+	float			: right;
+
+}
+
+#webclient .stationinfo {
+	width			: 906px; 
+	height			: 520px;
+}
+
+#webclient .results, #webclient .recent, 
+#webclient .search, #webclient .stationinfo {
+	border			: 1px solid #aaaaaa;
+	background-color: #fff;
+	padding			: 2px;
+}
+
+#webclient #header {
+	width			: 100%;
+	padding			: 5px 0;
+	text-align		: center;
+	border-bottom	: 1px solid #363737;
+	background		: #4d4d4d;
+	font-family		: 'TeXGyreAdventor', Arial, sans-serif;
+	font-weight		: bold;
+	color			: #fff;
+}
+
+#webclient form {
+	padding			: 10px;
+}
+
+form fieldset {
+	padding			: 0px;
+	margin			: 0px;
+	border			: none;
+}
+
+#webclient form label {
+	display			: block;
+}
+
+#webclient form .inputtext {
+	width			: 272px;
+	margin-bottom	: 20px;
+	padding			: 5px 5px;
+	border			: 1px solid #aaa;
+}
+
+#webclient form .checks {
+	margin-left		: 20px;
+}
+
+#webclient form .button, #contactus .button {
+	width			: 135px;
+	margin-top		: 20px;
+	margin-right	: 10px;
+	display			: inline-block;
+	outline			: none;
+	cursor			: pointer;
+	text-align		: center;
+	text-decoration	: none;
+	padding			: 5px 0;
+	text-shadow		: 0 1px 1px rgba(0,0,0,.3);
+	color			: #ccc;
+	background		: #4d4d4d;
+	border			: 1px solid #aaa;
+}
+
+#webclient form .button:hover, #contactus .button:hover {
+	text-decoration	: none;
+	color			: #fff;
+	background		: #363737;
+}	
+
+#webclient form .button:active, #contactus .button:active {
+	color			: #90b831;
+	background		: #363737;
+	border			: 1px solid #90b831;
+	outline			: none;
+}
+
+#webclient .stationlist tr:nth-child(odd), #webclient .live tr:nth-child(odd) { 
+	background-color: #eee; 
+	font-size		: 14px;
+}
+#webclient .stationlist tr:nth-child(even), #webclient .live tr:nth-child(even) { 
+	background-color: #e5e4d7; 
+	font-size		: 14px;
+}
+
+#webclient .stationlist, #webclient .live {
+	width			: 100%;
+	border-collapse : collapse;
+}
+
+#webclient .stationlist td, #webclient .live td {
+	padding			: 5px;
+	border			: 1px solid #ccc;;
+	overflow		: hidden;
+	white-space		: nowrap;
+}
+
+#webclient .stationlist td img {
+	height			: 18px;
+	margin-bottom	: 0px;
+	float			: right;
+}
+
+
+#webclient .stationlist tr:hover {
+	cursor			: pointer;
+	background		: #ffcc00;
+	color			: #363737;
+}
+
+#webclient .live td span {
+	margin			: 0 26%;
+}
+
+#webclient .details {
+	float			: left;
+	width			: 409px;
+	height			: 200px;
+	border			: 1px solid #aaa;
+	background		: #fff;
+	margin-bottom	: 10px;
+}
+
+#webclient .details table {
+	margin			: 10px;
+}
+
+
+#webclient .details table .lbl {
+	width			: 70px;
+	font-size		: 12px;
+	padding			: 5px;
+}
+
+#webclient .details table .data {
+	width			: 250px;
+	font-weight		: bold;
+	padding			: 5px;
+}
+
+#webclient .arrivals {
+	float			: right;
+	width			: 494px;
+	height			: 245px;
+	border			: 1px solid #aaa;
+	background		: #fff;
+	margin-bottom	: 10px;
+}
+
+
+#webclient .departures {
+	float			: right;
+	width			: 494px;
+	height			: 242px;
+	border			: 1px solid #aaa;
+	background		: #fff;
+}
+
+#webclient .location {
+	float			: left;
+	width			: 409px;
+	height			: 287px;
+	border			: 1px solid #aaa;
+	background		: #fff;
+}
+
+#webclient #mapcanvas {
+	width			: 100%; 
+	height			: 255px;
+	background-color: #fff;
+}
+
+#scrollable {
+	height			: 247px;
+	width			: 100%;
+	overflow		: auto;
+}
+/* End of Client Styles */
+
+
+/* Start of Contact Us Styles */
+#contactus .label{
+	float			: left;
+	width			: 100px;
+	font-weight		: bold;
+}
+
+#contactus .text, #contactus select, #contactus textarea {
+	float			: left;
+	width			: 275px;
+	padding			: 5px;
+	margin-right	: 500px;
+	margin-bottom	: 10px;
+	border			: 1px solid #aaa;
+	outline			: none;
+}
+
+#contactus #nameerror, #contactus #emailerror, #contactus #captchaerror {
+	width			: 490px;
+	float			: left;
+	margin-bottom	: 10px;
+	display			: none;
+	color			: red;
+	height			: 30px;
+}
+
+#contactus textarea {
+	width			: 450px;
+	margin-right	: 300px;
+}
+#contactus #messageerror {
+	width			: 290px;
+	float			: left;
+	margin-bottom	: 10px;
+	display			: none;
+	color			: red;
+	height			: 101px;
+}
+/* End of Contact Us Styles */
+
+
+
+/* Admin Styles Start*/
+.infoform .label{
+	float			: left;
+	width			: 100px;
+	font-weight		: bold;
+}
+
+.infoform .text, .infoform select, .infoform textarea {
+	float			: left;
+	width			: 275px;
+	padding			: 5px;
+	margin-bottom	: 10px;
+	margin-right	: 150px;
+	border			: 1px solid #aaa;
+	outline			: none;
+}
+
+.infoform .btn, .infoform .subbtn, .infoform .coordsbtn1, 
+.infoform .coordsbtn2, .infoform .apibtn {
+	width			: 135px;
+	display			: inline-block;
+	outline			: none;
+	cursor			: pointer;
+	text-align		: center;
+	text-decoration	: none;
+	padding			: 5px 0;
+	text-shadow		: 0 1px 1px rgba(0,0,0,.3);
+	color			: #ccc;
+	background		: #4d4d4d;
+	border			: 1px solid #aaa;
+}
+
+.infoform .btn:hover, .infoform .subbtn:hover, .infoform .coordsbtn1:hover, 
+.infoform .coordsbtn2:hover, .infoform .apibtn:hover {
+	text-decoration	: none;
+	color			: #fff;
+	background		: #363737;
+}	
+
+.infoform .btn:active, .infoform .subbtn:active, .infoform .coordsbtn1:active, 
+.infoform .coordsbtn2:active, .infoform .apibtn:active {
+	color			: #90b831;
+	background		: #363737;
+	border			: 1px solid #90b831;
+	outline			: none;
+}
+
+.infoform .coordsbtn1 {
+	float			: left; 
+	margin-left		: 100px; 
+	margin-bottom	: 10px;
+}
+
+.infoform .coordsbtn2 {
+	float			: left; 
+	margin-left		: 10px; 
+	margin-right	: 100px; 
+	margin-bottom	: 10px;
+}
+
+ .infoform .apibtn {
+ 	margin-left		: 10px; 
+ 	margin-bottom	: 10px;
+ }
+
+ .infoform .subbtn {
+ 	float			: right;
+ 	margin-right	: 10px;
+ }
+
+.infoform p {
+	width			: 450px;
+	float			: left; 
+	margin-left		: 100px;
+}
+
+.infoform textarea {
+	resize			: none; 
+	width			: 450px; 
+	margin-right	: 0px;
+}
