@@ -27,7 +27,7 @@
 				
 				<div class="menubar">
 					<ul>
-						<li><a href="index.html">Home</a></li>
+						<li><a href="index.jsp">Home</a></li>
 						<li class="active"><a href="client">Client</a></li>
 						<li><a href="contact">Contact</a></li>
 					</ul>
@@ -136,67 +136,7 @@
 	</div>
 
 
-
-	<div class="footer">
-		
-		<div class="footerholder">
-			
-			<div class="sitedetails">
-			
-				<div id="aboutsite">
-					<h4>About</h4>
-					<p>
-						SmartCommuter Android Application and Web Client were developed as part of a 
-						fourth year prject in Hons BSc in Software Systems Development at the Waterford 
-						Institute of Technology.
-					</p>
-				</div>
-				
-				<div id="socialnetworks">
-					<h4>Social Networks</h4>
-					<p>
-						Follow us on your favourite social networks.
-					</p>
-					<a href="http://www.facebook.com"><img src="img/social_networks/facebook_32.png" title="Facebook" alt="Facebook"/></a>
-					<a href="http://www.linkedin.com"><img src="img/social_networks/linkedin_32.png" title="LinkedIn" alt="LinkedIn"/></a>
-					<a href="http://www.twitter.com"><img src="img/social_networks/twitter_32.png" title="Twitter" alt="Twitter"/></a>
-					<a href="http://www.youtube.com"><img src="img/social_networks/youtube_32.png" title="Youtube" alt="Youtube"/></a>
-				</div>
-				
-				<div id="navsite">
-					<h4>Navigation</h4>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="client">Client</a></li>
-						<li><a href="contact">Contact</a></li>
-						<li><a href="admin">Admin</a></li>
-					</ul>
-				</div>
-			
-				<div id="usefullinks">
-					<h4>Useful Links</h4>
-					<ul>
-						<li><a href="http://www.buseireann.ie">Bus &#201;ireann</a></li>
-						<li><a href="http://www.dublinbus.ie">Dublin Bus</a></li>
-						<li><a href="http://www.irishrail.ie">Irish Rail</a></li>
-						<li><a href="http://www.jjkavanagh.ie">JJ Kavanagh &amp; Sons</a></li>
-						<li><a href="http://www.luas.ie">Luas</a></li>
-						<li><a href="http://www.rtpi.ie/">Transport for Ireland</a></li>
-					</ul>
-				</div>
-				<br/>
-			
-			</div>
-			
-			<div class="author">
-				Developed by Shane Bryan Doyle (shane@iamcloudy.com)
-			</div>
-
-		</div>
-		
-	</div>
-	
-	
+	<jsp:include page="incFooter.html"/>
 
 </body>
 </html>

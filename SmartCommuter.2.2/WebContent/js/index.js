@@ -96,6 +96,15 @@ function validateContactForm() {
 	return returnValue;
 }
 
+
+function resetStationSearchForm() {
+	document.getElementById('busstation').checked = true;
+	document.getElementById('railstation').checked = true;
+	document.getElementById('tramstation').checked = true;
+	document.getElementById('stationname').value = "Type the Station Name";
+}
+
+
 /**
  * This method is used to reset the contact us
  * form.
@@ -217,5 +226,6 @@ function initialize(lat,lon) {
         title:"Station Location"
     });
     
+    console.log(marker);
   }
 

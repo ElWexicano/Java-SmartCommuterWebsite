@@ -3,7 +3,7 @@
   <display-name>SmartCommuter.2.0</display-name>
   <description>SmartCommuter Web Client</description>
   <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
     <welcome-file>/axis2-web/index.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
@@ -117,4 +117,20 @@
     <servlet-name>AdminExit</servlet-name>
     <url-pattern>/adminExit</url-pattern>
   </servlet-mapping>
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>SmartCommuter Admin</web-resource-name>
+      <url-pattern>/admin</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>smartcommuter-admin</role-name>
+    </auth-constraint>
+  </security-constraint>
+  <login-config>
+   <auth-method>FORM</auth-method>
+   <form-login-config>
+     <form-login-page>/login.jsp</form-login-page>
+     <form-error-page>/loginError.jsp</form-error-page>
+   </form-login-config>
+ </login-config>
 </web-app>

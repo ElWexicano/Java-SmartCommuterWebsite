@@ -3,7 +3,7 @@ package ie.smartcommuter.controllers;
 import ie.smartcommuter.client.RealTimeClient;
 import ie.smartcommuter.models.BeanUtils;
 import ie.smartcommuter.models.Station;
-import ie.smartcommuter.models.StationData;
+import ie.smartcommuter.service.RealTimeStub.StationData;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -17,35 +17,44 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 public class StationDetails extends HttpServlet {
-	
+	private static final long serialVersionUID = 1L;
 	List<Station> recentlyViewedStations = new ArrayList<Station>();
 	
 	@SuppressWarnings("unchecked")
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		
-		String address = "details.jsp";
+		String address = "clientStationDetails.jsp";
 		Integer stationId = new Integer(request.getParameter("stationid"));
 
 		if(stationId!=null){
 			Station station = BeanUtils.getStationDetails(stationId);
 
-            List<StationData> stationData = new ArrayList<StationData>();
-            StationData temp = new StationData();
-            
-            temp.setDestination("Destination");
-            temp.setExpectedTime("11:18");
-            temp.setRoute("Route 2");
-            
-            for(int i = 0; i < 10; i++) {
-            	stationData.add(temp);
-            }
-                
-			// Next get the real time data for the station!
-
-//            StationData stationData = 
-//            		RealTimeClient.getStationData(RealTimeClient.getStub(),"", 
-//            				station.getApiCode());
+			
+			
+            List<StationData> stationData = null;
+			try {
+				stationData = RealTimeClient.getStationData(RealTimeClient.getStub(),
+						BeanUtils.getStationAPIServiceType(station), 
+						station.getApiCode());
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			
+			if(stationData!=null){
+				List<StationData> arrivals = new ArrayList<StationData>();
+				List<StationData> departures = new ArrayList<StationData>();
+				for(StationData sd : stationData) {
+					
+					if(sd.getIsArrivalOrDeparture().equals("Arrival")) {
+						arrivals.add(sd);
+					} else if(sd.getIsArrivalOrDeparture().equals("Departure")) {
+						departures.add(sd);
+					}
+				}
+				station.setArrivals(arrivals);
+				station.setDepartures(departures);
+			}
 			
 			HttpSession mySession = request.getSession(true);
 			recentlyViewedStations = (List<Station>) mySession.getAttribute("recentlyViewedStations");
@@ -54,9 +63,6 @@ public class StationDetails extends HttpServlet {
 			}
 			recentlyViewedStations = BeanUtils.addToRecentlyViewed(station, recentlyViewedStations);
 			mySession.setAttribute("recentlyViewedStations", recentlyViewedStations);
-			
-            station.setArrivals(stationData);
-            station.setDepartures(stationData);
 			request.setAttribute("station", station);
 		}
 

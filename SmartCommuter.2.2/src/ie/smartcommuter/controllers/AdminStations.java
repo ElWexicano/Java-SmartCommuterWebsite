@@ -15,7 +15,7 @@ public class AdminStations extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
 		
-		String address = "admin-stations.jsp";
+		String address = "adminStations.jsp";
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(address);
 		dispatcher.forward(request, response);

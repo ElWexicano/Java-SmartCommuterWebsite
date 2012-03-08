@@ -2,7 +2,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 <head>
-	<title>SmartCommuter.ie</title>
+	<title>SmartCommuter.ie - Admin</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
@@ -83,8 +83,8 @@
 								<label class="label" for="address">Address</label>
 								<input class="text" style="width: 450px; margin-right: 0px;" type="text" name="address" id="address"/>
 								
-								<input class="coordsbtn1" type="button" onclick="" value="CoOrds. for Address"/>
-								<input class="coordsbtn2" type="button" onclick="" value="Address for CoOrds."/>
+								<input class="coordsbtn1" type="button" onclick="" value="Find Address"/>
+								<input class="coordsbtn2" type="button" onclick="" value="Find CoOrds."/>
 								
 								<label class="label" for="latitude">Latitude</label>
 								<input class="text" type="text" name="latitude" id="latitude"/>
@@ -121,8 +121,8 @@
 						
 						<div id="scrollable">
 							<table class="stationlist">
-								<c:forEach items="${recentlyViewedStations}" var="station">
-									<tr onclick="viewStation(${station.id})"><td>${station.name}</td></tr>
+								<c:forEach items="${adminSearchStations}" var="station">
+									<tr onclick="editStation(${station.id})"><td>${station.name}</td></tr>
 								</c:forEach>
 							</table>
 						</div>
@@ -140,72 +140,11 @@
 			</div>
 			
 		</div>
-		
-		
-	</div>
 
-
-
-	<div class="footer">
-		
-		<div class="footerholder">
-			
-			<div class="sitedetails">
-			
-				<div id="aboutsite">
-					<h4>About</h4>
-					<p>
-						SmartCommuter Android Application and Web Client were developed as part of a 
-						fourth year prject in Hons BSc in Software Systems Development at the Waterford 
-						Institute of Technology.
-					</p>
-				</div>
-				
-				<div id="socialnetworks">
-					<h4>Social Networks</h4>
-					<p>
-						Follow us on your favourite social networks.
-					</p>
-					<a href="http://www.facebook.com"><img src="img/social_networks/facebook_32.png" title="Facebook" alt="Facebook"/></a>
-					<a href="http://www.linkedin.com"><img src="img/social_networks/linkedin_32.png" title="LinkedIn" alt="LinkedIn"/></a>
-					<a href="http://www.twitter.com"><img src="img/social_networks/twitter_32.png" title="Twitter" alt="Twitter"/></a>
-					<a href="http://www.youtube.com"><img src="img/social_networks/youtube_32.png" title="Youtube" alt="Youtube"/></a>
-				</div>
-				
-				<div id="navsite">
-					<h4>Navigation</h4>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="client">Client</a></li>
-						<li><a href="contact">Contact</a></li>
-						<li><a href="admin">Admin</a></li>
-					</ul>
-				</div>
-			
-				<div id="usefullinks">
-					<h4>Useful Links</h4>
-					<ul>
-						<li><a href="http://www.buseireann.ie">Bus &#201;ireann</a></li>
-						<li><a href="http://www.dublinbus.ie">Dublin Bus</a></li>
-						<li><a href="http://www.irishrail.ie">Irish Rail</a></li>
-						<li><a href="http://www.jjkavanagh.ie">JJ Kavanagh &amp; Sons</a></li>
-						<li><a href="http://www.luas.ie">Luas</a></li>
-						<li><a href="http://www.rtpi.ie/">Transport for Ireland</a></li>
-					</ul>
-				</div>
-				<br/>
-			
-			</div>
-			
-			<div class="author">
-				Developed by Shane Bryan Doyle (shane@iamcloudy.com)
-			</div>
-
-		</div>
-		
 	</div>
 	
-	
+
+	<jsp:include page="incFooter.html"/>
 
 </body>
 </html>

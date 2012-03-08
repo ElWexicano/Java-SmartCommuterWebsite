@@ -14,16 +14,14 @@
 		<div class="header">
 			<div class="headerholder">
 				
-				
 				<div class="logo">
 					<img src="img/logo.png" width="35px"/>
 					<span class="title">SmartCommuter.ie</span>
 				</div>
 
-				
 				<div class="menubar">
 					<ul>
-						<li><a href="index.html">Home</a></li>
+						<li><a href="index.jsp">Home</a></li>
 						<li class="active"><a href="client">Client</a></li>
 						<li><a href="contact">Contact</a></li>
 					</ul>
@@ -74,18 +72,38 @@
 								<input class="checks" type="checkbox" name="railstation" id="railstation" value="Rail" checked="checked"/>Rail
 								<input class="checks" type="checkbox" name="tramstation" id="tramstation" value="Tram" checked="checked"/>Tram
 								
-								<input id="searchbutton" class="button" type="submit" value="Search"/>
-								<input class="button" style="margin-right: 0px" type="button" value="Reset"/>
+								<input class="button" type="submit" value="Search"/>
+								<input class="button" style="margin-right: 0px" type="button" value="Reset" onclick="resetStationSearchForm()"/>
 							</fieldset>
 						</form>
 					</div>
 					
 					<div class="results">
-						<div id="header">Instructions</div>
+						<div id="header">Search Results for "${searchedStation}"</div>
 						
-						Include instructions of how to use the web client here.<br/>
-						
-						Also include any error messages here!
+						<div id="scrollable" style="height: 485px;">
+							<table class="stationlist">
+								<c:forEach items="${searchResultStations}" var="station">
+									<tr title="${station.company.mode} Station" style="border:1px solid #ccc" onclick="viewStation(${station.id})">
+										<td style="border:0" width="7%">
+										<c:choose>
+											<c:when test="${station.company.mode=='Bus'}">
+												<img alt="Logo" src="img/icons/bus.png"/>
+											</c:when>
+											<c:when test="${station.company.mode=='Rail'}">
+												<img alt="Logo" src="img/icons/train.png"/>
+											</c:when>
+											<c:when test="${station.company.mode=='Tram'}">
+												<img alt="Logo" src="img/icons/tram.png"/>
+											</c:when>
+										</c:choose>
+										</td>
+										<td style="border:0; text-align:center; font-weight:bold" width="65%">${station.name}</td>
+										<td style="border:0" width="28%">${station.company.name}</td>
+									</tr>
+								</c:forEach>
+							</table>
+						</div>
 						
 					</div>
 					
@@ -95,7 +113,9 @@
 						<div id="scrollable">
 							<table class="stationlist">
 								<c:forEach items="${recentlyViewedStations}" var="station">
-									<tr onclick="viewStation(${station.id})"><td>${station.name}</td></tr>
+									<tr onclick="viewStation(${station.id})">
+										<td>${station.name}</td>
+									</tr>
 								</c:forEach>
 							</table>
 						</div>
@@ -115,71 +135,11 @@
 			
 		</div>
 		
-		
 	</div>
 
 
-
-	<div class="footer">
+	<jsp:include page="incFooter.html"/>
 		
-		<div class="footerholder">
-			
-			<div class="sitedetails">
-			
-				<div id="aboutsite">
-					<h4>About</h4>
-					<p>
-						SmartCommuter Android Application and Web Client were developed as part of a 
-						fourth year prject in Hons BSc in Software Systems Development at the Waterford 
-						Institute of Technology.
-					</p>
-				</div>
-				
-				<div id="socialnetworks">
-					<h4>Social Networks</h4>
-					<p>
-						Follow us on your favourite social networks.
-					</p>
-					<a href="http://www.facebook.com"><img src="img/social_networks/facebook_32.png" title="Facebook" alt="Facebook"/></a>
-					<a href="http://www.linkedin.com"><img src="img/social_networks/linkedin_32.png" title="LinkedIn" alt="LinkedIn"/></a>
-					<a href="http://www.twitter.com"><img src="img/social_networks/twitter_32.png" title="Twitter" alt="Twitter"/></a>
-					<a href="http://www.youtube.com"><img src="img/social_networks/youtube_32.png" title="Youtube" alt="Youtube"/></a>
-				</div>
-				
-				<div id="navsite">
-					<h4>Navigation</h4>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="client">Client</a></li>
-						<li><a href="contact">Contact</a></li>
-						<li><a href="admin">Admin</a></li>
-					</ul>
-				</div>
-			
-				<div id="usefullinks">
-					<h4>Useful Links</h4>
-					<ul>
-						<li><a href="http://www.buseireann.ie">Bus &#201;ireann</a></li>
-						<li><a href="http://www.dublinbus.ie">Dublin Bus</a></li>
-						<li><a href="http://www.irishrail.ie">Irish Rail</a></li>
-						<li><a href="http://www.jjkavanagh.ie">JJ Kavanagh &amp; Sons</a></li>
-						<li><a href="http://www.luas.ie">Luas</a></li>
-						<li><a href="http://www.rtpi.ie/">Transport for Ireland</a></li>
-					</ul>
-				</div>
-				<br/>
-			
-			</div>
-			
-			<div class="author">
-				Developed by Shane Bryan Doyle (shane@iamcloudy.com)
-			</div>
-
-		</div>
-		
-	</div>
-	
-	
 
 </body>
 </html>

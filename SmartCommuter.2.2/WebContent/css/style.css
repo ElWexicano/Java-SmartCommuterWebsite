@@ -504,7 +504,7 @@ form fieldset {
 
 
 
-/* Admin Styles Start*/
+/* Start of Admin Styles */
 .infoform .label{
 	float			: left;
 	width			: 100px;
@@ -585,3 +585,66 @@ form fieldset {
 	width			: 450px; 
 	margin-right	: 0px;
 }
+
+#adminlogin {
+	width			: 300px;
+	padding			: 10px 20px 30px 20px;
+	margin			: 0 auto;
+	border			: 1px solid #aaa;
+	margin-top		: 100px;
+	margin-bottom	: 100px;
+	color			: #fff;
+	background		: #363737;
+	font			: normal 14px 'TeXGyreAdventor', Arial, sans-serif;
+}
+
+#adminlogin h2 {
+	margin-top		: 0px;
+	color			: #7EAE1C;
+}
+
+#adminlogin img {
+	float			: right;
+	margin			: 10px 5px 5px 5px;
+}
+
+#adminlogin form {
+	width			: 100%;
+}
+
+#adminlogin form label {
+	float			: left;
+	width			: 100px;
+	font-weight		: bold;
+	font-size		: 12px;
+}
+
+#adminlogin form .text {
+	float			: left;
+	width			: 180px;
+	padding			: 5px;
+	margin-bottom	: 10px;
+	border			: 1px solid #aaa;
+	outline			: none;
+	background-color: #fff;
+	color			: #363737;
+}
+
+#adminlogin .adminloginbtn {
+	width			: 145px;
+	display			: inline-block;
+	outline			: none;
+	cursor			: pointer;
+	text-align		: center;
+	text-decoration	: none;
+	padding			: 5px 0;
+	text-shadow		: 0 1px 1px rgba(0,0,0,.3);
+	color			: #fff;
+	font-size		: 14px;
+	background		: #4d4d4d;
+	border			: 1px solid #aaa;
+	margin-top		: 10px;
+	margin-bottom	: -5px;
+}
+
+/* End of Admin Styles */

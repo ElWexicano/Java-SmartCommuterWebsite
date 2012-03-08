@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 public class ContactUsSubmit extends HttpServlet {
+	private static final long serialVersionUID = 1L;
 	
 	private String address = "contact.jsp";
 	
@@ -23,7 +24,7 @@ public class ContactUsSubmit extends HttpServlet {
 		Captcha myCaptcha = (Captcha) mySession.getAttribute("captcha");
 		
 		if(myCaptcha.getAnswer().equals(captchaValue)){
-			address = "index.html";
+			address = "index.jsp";
 		} else {
 			myCaptcha.generate();
 			

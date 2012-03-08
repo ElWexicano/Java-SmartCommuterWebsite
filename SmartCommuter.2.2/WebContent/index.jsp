@@ -1,6 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
 <head>
 	<title>SmartCommuter.ie</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
@@ -22,7 +23,7 @@
 				
 				<div class="menubar">
 					<ul>
-						<li class="active"><a href="index.html">Home</a></li>
+						<li class="active"><a href="index.jsp">Home</a></li>
 						<li><a href="client">Client</a></li>
 						<li><a href="contact">Contact</a></li>
 					</ul>
@@ -62,7 +63,7 @@
 					It provides up to the minute public transport information for the following:
 				</p>
 				
-				<img class="transportlogo" src="img/companies/bus_eireann.jpeg" alt="Bus Éireann" title="Bus Éireann"/>
+				<img class="transportlogo" src="img/companies/bus_eireann.jpeg" alt="Bus Ãireann" title="Bus Ãireann"/>
 				<img class="transportlogo" src="img/companies/dublin_bus.jpg" alt="Dublin Bus" title="Dublin Bus"/>
 				<img class="transportlogo" src="img/companies/irish_rail.gif" alt="Irish Rail" title="Irish Rail"/>
 				<img class="transportlogo" src="img/companies/jj_kavanagh.jpg" alt="JJ Kavanagh & Sons" title="JJ Kavanagh & Sons"/>
@@ -74,7 +75,7 @@
 				<p>
 					Commuters will be able to view information on the different transport
 					stations, view timetables, view routes, view transportation modes on a map and
-					allow them to plan their journey. Using the Smartphone’s built in GPS system
+					allow them to plan their journey. Using the Smartphoneâs built in GPS system
 					SmartCommuter can provide information about nearby stations such as when next
 					departure or arrival will happen and even provide directions to the station.
 				</p>
@@ -103,71 +104,9 @@
 			
 		</div>
 		
-		
 	</div>
 
-
-
-	<div class="footer">
-		
-		<div class="footerholder">
-			
-			<div class="sitedetails">
-			
-				<div id="aboutsite">
-					<h4>About</h4>
-					<p>
-						SmartCommuter Android Application and Web Client were developed as part of a 
-						fourth year prject in Hons BSc in Software Systems Development at the Waterford 
-						Institute of Technology.
-					</p>
-				</div>
-				
-				<div id="socialnetworks">
-					<h4>Social Networks</h4>
-					<p>
-						Follow us on your favourite social networks.
-					</p>
-					<a href="http://www.facebook.com"><img src="img/social_networks/facebook_32.png" title="Facebook" alt="Facebook"/></a>
-					<a href="http://www.linkedin.com"><img src="img/social_networks/linkedin_32.png" title="LinkedIn" alt="LinkedIn"/></a>
-					<a href="http://www.twitter.com"><img src="img/social_networks/twitter_32.png" title="Twitter" alt="Twitter"/></a>
-					<a href="http://www.youtube.com"><img src="img/social_networks/youtube_32.png" title="Youtube" alt="Youtube"/></a>
-				</div>
-				
-				<div id="navsite">
-					<h4>Navigation</h4>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="client">Client</a></li>
-						<li><a href="contact">Contact</a></li>
-						<li><a href="admin">Admin</a></li>
-					</ul>
-				</div>
-			
-				<div id="usefullinks">
-					<h4>Useful Links</h4>
-					<ul>
-						<li><a href="http://www.buseireann.ie">Bus Éireann</a></li>
-						<li><a href="http://www.dublinbus.ie">Dublin Bus</a></li>
-						<li><a href="http://www.irishrail.ie">Irish Rail</a></li>
-						<li><a href="http://www.jjkavanagh.ie">JJ Kavanagh &amp; Sons</a></li>
-						<li><a href="http://www.luas.ie">Luas</a></li>
-						<li><a href="http://www.rtpi.ie/">Transport for Ireland</a></li>
-					</ul>
-				</div>
-
-			
-			</div>
-			
-			<div class="author">
-				Developed by Shane Bryan Doyle (shane@iamcloudy.com)
-			</div>
-
-		</div>
-		
-	</div>
-	
-	
+	<jsp:include page="incFooter.html"/>
 
 </body>
 </html>

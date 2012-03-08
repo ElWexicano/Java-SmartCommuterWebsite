@@ -13,7 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 public class StationSearch extends HttpServlet {
-
+	private static final long serialVersionUID = 1L;
+	
 	List<Station> recentlyViewedStations = new ArrayList<Station>();
 	List<Station> searchResultStations = new ArrayList<Station>();
 	
@@ -21,7 +22,7 @@ public class StationSearch extends HttpServlet {
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		
-		String address = "results.jsp";
+		String address = "clientSearchResults.jsp";
 		String stationName = (String) request.getParameter("stationname");
 		Boolean searchBus = request.getParameter("busstation") != null ? true : false;
 		Boolean searchRail = request.getParameter("railstation") != null ? true : false;

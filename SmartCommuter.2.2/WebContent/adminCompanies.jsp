@@ -2,7 +2,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 <head>
-	<title>SmartCommuter.ie</title>
+	<title>SmartCommuter.ie - Admin</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>

@@ -19,7 +19,7 @@ public class AdminCompanies extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		String address = "admin-companies.jsp";
+		String address = "adminCompanies.jsp";
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(address);
 		dispatcher.forward(request, response);

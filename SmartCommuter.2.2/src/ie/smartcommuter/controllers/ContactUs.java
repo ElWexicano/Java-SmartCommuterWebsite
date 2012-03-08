@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 public class ContactUs extends HttpServlet {
-	
+	private static final long serialVersionUID = 1L;
 	private String address = "contact.jsp";
 	
 	public void doGet(HttpServletRequest request, HttpServletResponse response)

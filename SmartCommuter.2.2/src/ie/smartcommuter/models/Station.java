@@ -9,8 +9,8 @@ public class Station {
 	private String apiCode;
 	private Address address;
 	private Company company;
-	private List<StationData> arrivals;
-	private List<StationData> departures;
+	private List<ie.smartcommuter.service.RealTimeStub.StationData> arrivals;
+	private List<ie.smartcommuter.service.RealTimeStub.StationData> departures;
 	
 	public String getName() {
 		return name;
@@ -30,16 +30,16 @@ public class Station {
 	public void setAddress(Address address) {
 		this.address = address;
 	}
-	public List<StationData> getDepartures() {
+	public List<ie.smartcommuter.service.RealTimeStub.StationData> getDepartures() {
 		return departures;
 	}
-	public void setDepartures(List<StationData> stationData) {
+	public void setDepartures(List<ie.smartcommuter.service.RealTimeStub.StationData> stationData) {
 		this.departures = stationData;
 	}
-	public List<StationData> getArrivals() {
+	public List<ie.smartcommuter.service.RealTimeStub.StationData> getArrivals() {
 		return arrivals;
 	}
-	public void setArrivals(List<StationData> stationData) {
+	public void setArrivals(List<ie.smartcommuter.service.RealTimeStub.StationData> stationData) {
 		this.arrivals = stationData;
 	}
 	public int getId() {

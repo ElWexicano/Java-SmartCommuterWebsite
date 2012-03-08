@@ -16,6 +16,6 @@ public class AdminExit extends HttpServlet {
 		
 		// Log the user out of the session!
 		
-		response.sendRedirect("index.html");
+		response.sendRedirect("index.jsp");
 	}
 }
