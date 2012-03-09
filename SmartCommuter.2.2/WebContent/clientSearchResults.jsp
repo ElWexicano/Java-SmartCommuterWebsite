@@ -82,10 +82,28 @@
 						<div id="header">Search Results for "${searchedStation}"</div>
 						
 						<div id="scrollable" style="height: 485px;">
+						
 							<table class="stationlist">
+								<tr>
+									<th width="10%">Mode</th>
+									<th width="65%">Station Name</th>
+									<th width="25%">Company</th>
+								<tr>
+								
+							<c:choose>
+								<c:when test="${empty searchResultStations}">
+									<tr>
+										<td></td>
+										<td>No Stations found!</td>
+										<td></td>
+									<tr>
+								</c:when>
+								<c:when test="${!empty searchResultStations}">
+	
+								
 								<c:forEach items="${searchResultStations}" var="station">
 									<tr title="${station.company.mode} Station" style="border:1px solid #ccc" onclick="viewStation(${station.id})">
-										<td style="border:0" width="7%">
+										<td style="border:0">
 										<c:choose>
 											<c:when test="${station.company.mode=='Bus'}">
 												<img alt="Logo" src="img/icons/bus.png"/>
@@ -98,10 +116,13 @@
 											</c:when>
 										</c:choose>
 										</td>
-										<td style="border:0; text-align:center; font-weight:bold" width="65%">${station.name}</td>
-										<td style="border:0" width="28%">${station.company.name}</td>
+										<td style="border:0; text-align:center; font-weight:bold">${station.name}</td>
+										<td style="border:0">${station.company.name}</td>
 									</tr>
 								</c:forEach>
+								</c:when>
+							
+							</c:choose>
 							</table>
 						</div>
 						
@@ -112,11 +133,24 @@
 						
 						<div id="scrollable">
 							<table class="stationlist">
-								<c:forEach items="${recentlyViewedStations}" var="station">
-									<tr onclick="viewStation(${station.id})">
-										<td>${station.name}</td>
-									</tr>
-								</c:forEach>
+						
+							<c:choose>
+								<c:when test="${recentlyViewedStations==null}">
+									<tr>
+										<td>
+											There are no recently viewed stations.
+										</td>
+									</tr>	
+								</c:when>
+								<c:when test="${recentlyViewedStations!=null}">
+									<c:forEach items="${recentlyViewedStations}" var="station">
+										<tr onclick="viewStation(${station.id})">
+											<td>${station.name}</td>
+										</tr>
+									</c:forEach>
+								</c:when>
+							
+							</c:choose>
 							</table>
 						</div>
 					</div>

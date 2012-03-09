@@ -69,15 +69,38 @@
 						<div class="arrivals">
 							<div id="header">Arrivals</div>
 							<div id="scrollable" style="height: 212px;">
+							
 								<table class="live">
-								<c:forEach items="${station.arrivals}" var="data">
 									<tr>
-										<td width="30%">${data.route}</td>
-										<td width="60%">${data.destination}</td>
-										<td width="15%">${data.expectedTime}</td>
-									</tr>
-								</c:forEach>
+										<th width="20%">Route</th>
+										<th width="60%">Destination</th>
+										<th width="20%">Arr. Time</th>
+									<tr>
+								
+									<c:choose>
+										<c:when test="${station.arrivals==null}">
+										<tr>
+											<td>--</td>
+											<td>No Arrivals expected at Station</td>
+											<td>00:00</td>
+										</tr>	
+										</c:when>
+										<c:when test="${station.arrivals!=null}">
+										
+										<c:forEach items="${station.arrivals}" var="data">
+										<tr>
+											<td>${data.route}</td>
+											<td><b>${data.destination}</b></td>
+											<td>${data.expectedTime}</td>
+										</tr>
+										</c:forEach>
+										
+										</c:when>
+									
+									</c:choose>
+								
 								</table>
+
 							</div>
 						</div>
 						
@@ -107,15 +130,38 @@
 						<div class="departures">
 							<div id="header">Departures</div>
 							<div id="scrollable" style="height: 210px;">
+							
 								<table class="live">
-								<c:forEach items="${station.departures}" var="data">
 									<tr>
-										<td width="30%">${data.route}</td>
-										<td width="60%">${data.destination}</td>
-										<td width="15%">${data.expectedTime}</td>
-									</tr>
-								</c:forEach>
+										<th width="20%">Route</th>
+										<th width="60%">Destination</th>
+										<th width="20%">Dep. Time</th>
+									<tr>
+								
+									<c:choose>
+										<c:when test="${station.departures==null}">
+										<tr>
+											<td>--</td>
+											<td>No Depatures expected from Station</td>
+											<td>00:00</td>
+										</tr>	
+										</c:when>
+										<c:when test="${station.departures!=null}">
+										
+										<c:forEach items="${station.departures}" var="data">
+										<tr>
+											<td>${data.route}</td>
+											<td><b>${data.destination}</b></td>
+											<td>${data.expectedTime}</td>
+										</tr>
+										</c:forEach>
+										
+										</c:when>
+									
+									</c:choose>
+								
 								</table>
+							
 							</div>
 						</div>
 

@@ -112,9 +112,24 @@
 						
 						<div id="scrollable">
 							<table class="stationlist">
-								<c:forEach items="${recentlyViewedStations}" var="station">
-									<tr onclick="viewStation(${station.id})"><td>${station.name}</td></tr>
-								</c:forEach>
+						
+							<c:choose>
+								<c:when test="${recentlyViewedStations==null}">
+									<tr>
+										<td>
+											There are no recently viewed stations.
+										</td>
+									</tr>	
+								</c:when>
+								<c:when test="${recentlyViewedStations!=null}">
+									<c:forEach items="${recentlyViewedStations}" var="station">
+										<tr onclick="viewStation(${station.id})">
+											<td>${station.name}</td>
+										</tr>
+									</c:forEach>
+								</c:when>
+							
+							</c:choose>
 							</table>
 						</div>
 					</div>

@@ -377,14 +377,13 @@ form fieldset {
 	border			: 1px solid #ccc;;
 	overflow		: hidden;
 	white-space		: nowrap;
+	text-align		: center;
 }
 
 #webclient .stationlist td img {
 	height			: 18px;
 	margin-bottom	: 0px;
-	float			: right;
 }
-
 
 #webclient .stationlist tr:hover {
 	cursor			: pointer;
@@ -392,8 +391,9 @@ form fieldset {
 	color			: #363737;
 }
 
-#webclient .live td span {
-	margin			: 0 26%;
+#webclient .live th, #webclient .stationlist th {
+	background		: #ffcc00;
+	padding			: 5px 0;
 }
 
 #webclient .details {
@@ -431,7 +431,6 @@ form fieldset {
 	margin-bottom	: 10px;
 }
 
-
 #webclient .departures {
 	float			: right;
 	width			: 494px;
@@ -458,7 +457,11 @@ form fieldset {
 	height			: 247px;
 	width			: 100%;
 	overflow		: auto;
+	overflow-x		: hidden;
 }
+
+
+
 /* End of Client Styles */
 
 
@@ -647,4 +650,10 @@ form fieldset {
 	margin-bottom	: -5px;
 }
 
+#adminlogin .adminloginbtn:active {
+	color			: #90b831;
+	background		: #363737;
+	border			: 1px solid #90b831;
+	outline			: none;
+}
 /* End of Admin Styles */

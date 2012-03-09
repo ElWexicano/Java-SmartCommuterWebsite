@@ -33,7 +33,7 @@ public class RealTimeClient {
 	public static void main(String[] args) {
 		
 		try {
-			for(StationData sd : getStationData(getStub(),"Luas","Stillorgan")){
+			for(StationData sd : getStationData(getStub(),"Luas","Citywest Campus")){
 				System.out.println(sd.getIsArrivalOrDeparture());
 			}
 		} catch (Exception e) {
