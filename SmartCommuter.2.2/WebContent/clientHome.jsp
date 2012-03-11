@@ -82,28 +82,7 @@
 					<div class="results">
 						<div id="header">Instructions</div>
 						
-						<p class="instructions">
-							<b>Searching for Stations</b><br/>
-							First enter the name of the station. If you don't
-							know the exact name of the station just enter the
-							part of the name that you do know.<br/><br/>
-							
-							You can select the type of station you want to see. 
-							So if you want to only view bus stations, 
-							then uncheck Rail and Tram.<br/><br/>
-							
-							Once your happy with your search criteria, 
-							click on the Search otherwise you can reset 
-							your criteria by clicking the reset button.<br/><br/>
-							
-							To view details for a Station click on the Station Name in 
-							the search results or in the recently viewed list.<br/><br/>
-							
-							<b>Recently Viewed</b><br/>
-							This list shows the last 10 stations that 
-							you have viewed and is used to allow you
-							to quickly access recently viewed stations.<br/>
-						</p>
+						<img src="img/instructions.png" alt="" title=""/>
 				
 					</div>
 					

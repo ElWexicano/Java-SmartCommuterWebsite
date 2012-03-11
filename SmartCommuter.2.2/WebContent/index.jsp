@@ -63,11 +63,11 @@
 					It provides up to the minute public transport information for the following:
 				</p>
 				
-				<img class="transportlogo" src="img/companies/bus_eireann.jpeg" alt="Bus Ãireann" title="Bus Ãireann"/>
-				<img class="transportlogo" src="img/companies/dublin_bus.jpg" alt="Dublin Bus" title="Dublin Bus"/>
-				<img class="transportlogo" src="img/companies/irish_rail.gif" alt="Irish Rail" title="Irish Rail"/>
-				<img class="transportlogo" src="img/companies/jj_kavanagh.jpg" alt="JJ Kavanagh & Sons" title="JJ Kavanagh & Sons"/>
-				<img class="transportlogo" style="margin-right: 0" src="img/companies/luas.jpg" alt="Luas" title="Luas"/>
+				<img class="transportlogo" src="img/company_logos/bus_eireann.png" alt="Bus Ãireann" title="Bus Ãireann"/>
+				<img class="transportlogo" src="img/company_logos/dublin_bus.png" alt="Dublin Bus" title="Dublin Bus"/>
+				<img class="transportlogo" src="img/company_logos/irish_rail.png" alt="Irish Rail" title="Irish Rail"/>
+				<img class="transportlogo" src="img/company_logos/jj_kavanagh.png" alt="JJ Kavanagh & Sons" title="JJ Kavanagh & Sons"/>
+				<img class="transportlogo" style="margin-right: 0" src="img/company_logos/luas.png" alt="Luas" title="Luas"/>
 				
 				<hr/>
 				

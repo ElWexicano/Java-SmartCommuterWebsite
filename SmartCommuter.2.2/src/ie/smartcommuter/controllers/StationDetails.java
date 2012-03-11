@@ -30,8 +30,6 @@ public class StationDetails extends HttpServlet {
 		if(stationId!=null){
 			Station station = BeanUtils.getStationDetails(stationId);
 
-			
-			
             List<StationData> stationData = null;
 			try {
 				stationData = RealTimeClient.getStationData(RealTimeClient.getStub(),
@@ -42,6 +40,7 @@ public class StationDetails extends HttpServlet {
 			}
 			
 			if(stationData!=null){
+				
 				List<StationData> arrivals = new ArrayList<StationData>();
 				List<StationData> departures = new ArrayList<StationData>();
 				for(StationData sd : stationData) {

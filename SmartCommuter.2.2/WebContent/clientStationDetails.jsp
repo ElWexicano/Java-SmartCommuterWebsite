@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 <head>
@@ -70,13 +71,17 @@
 							<div id="header">Arrivals</div>
 							<div id="scrollable" style="height: 212px;">
 							
-								<table class="live">
-									<tr>
-										<th width="20%">Route</th>
-										<th width="60%">Destination</th>
-										<th width="20%">Arr. Time</th>
-									<tr>
-								
+								<table class="live" width="494px" style='table-layout:fixed'>
+									
+									<thead>
+										<tr>
+											<th width="20%">Route</th>
+											<th width="60%">Destination</th>
+											<th width="20%">Arr. Time</th>
+										</tr>
+									<thead>
+									
+									<tbody>
 									<c:choose>
 										<c:when test="${station.arrivals==null}">
 										<tr>
@@ -89,7 +94,7 @@
 										
 										<c:forEach items="${station.arrivals}" var="data">
 										<tr>
-											<td>${data.route}</td>
+											<td title="Route ${data.route}">${data.route}</td>
 											<td><b>${data.destination}</b></td>
 											<td>${data.expectedTime}</td>
 										</tr>
@@ -98,7 +103,7 @@
 										</c:when>
 									
 									</c:choose>
-								
+									</tbody>
 								</table>
 
 							</div>
@@ -106,20 +111,29 @@
 						
 						<div class="details">
 							<div id="header">Station Information</div>
-							<table>
-								<tr>
-									<td class="lbl">Name</td>
-									<td class="data">${station.name}</td>
-								<tr>
-								<tr>
-									<td class="lbl">Company</td>
-									<td class="data">${station.company.name}</td>
-								<tr>
-								<tr>
-									<td class="lbl">Address</td>
-									<td class="data">${station.address.location}</td>
-								<tr>
-							</table>
+							<c:choose>
+								<c:when test="${station.company.name=='Bus Éireann'}">
+									<img class="stationlogo" src="img/company_logos/bus_eireann.png"/>
+								</c:when>
+								<c:when test="${station.company.name=='Dublin Bus'}">
+									<img class="stationlogo" src="img/company_logos/dublin_bus.png"/>
+								</c:when>
+								<c:when test="${station.company.name=='Irish Rail'}">
+									<img class="stationlogo" src="img/company_logos/irish_rail.png"/>
+								</c:when>
+								<c:when test="${station.company.name=='Luas'}">
+									<img class="stationlogo" src="img/company_logos/luas.png"/>
+								</c:when>
+								<c:when test="${station.company.name=='JJ Kavanagh & Sons'}">
+									<img class="stationlogo" src="img/company_logos/jj_kavanagh.png"/>
+								</c:when>
+							</c:choose>
+							<span class="stationname">${station.name}</span>
+							<span class="stationaddress">${station.address.location}</span>
+							<span class="lastupdate">Last Updated: 
+								<c:set var="now" value="<%=new java.util.Date()%>"/>
+								<fmt:formatDate pattern="dd/MM/yyyy HH:mm" value="${now}"/>
+							</span>
 						</div>
 						
 						<div class="location">
@@ -131,13 +145,17 @@
 							<div id="header">Departures</div>
 							<div id="scrollable" style="height: 210px;">
 							
-								<table class="live">
-									<tr>
-										<th width="20%">Route</th>
-										<th width="60%">Destination</th>
-										<th width="20%">Dep. Time</th>
-									<tr>
-								
+								<table class="live" width="494px" style='table-layout:fixed'>
+									
+									<thead>
+										<tr>
+											<th width="20%">Route</th>
+											<th width="60%">Destination</th>
+											<th width="20%">Dep. Time</th>
+										</tr>
+									<thead>
+									
+									<tbody>
 									<c:choose>
 										<c:when test="${station.departures==null}">
 										<tr>
@@ -150,7 +168,7 @@
 										
 										<c:forEach items="${station.departures}" var="data">
 										<tr>
-											<td>${data.route}</td>
+											<td title="Route: ${data.route}">${data.route}</td>
 											<td><b>${data.destination}</b></td>
 											<td>${data.expectedTime}</td>
 										</tr>
@@ -159,7 +177,7 @@
 										</c:when>
 									
 									</c:choose>
-								
+									</tbody>
 								</table>
 							
 							</div>
