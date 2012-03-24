@@ -220,12 +220,43 @@ function initialize(lat,lon) {
     };
     var map = new google.maps.Map(document.getElementById("mapcanvas"),myOptions);
     
+    var image = new google.maps.MarkerImage(getStationMarker());
+    
     var marker = new google.maps.Marker({
         position: coOrds,
         map: map,
+        icon: image,
         title:"Station Location"
     });
     
     console.log(marker);
   }
+
+
+/**
+ * This method is used to get the station
+ * marker image for the google map.
+ * @returns {String}
+ */
+function getStationMarker() {
+	
+	var stationType = (document.getElementById('stationType').value).toLowerCase();
+	
+	var imageLocation = "./img/icons/";
+	
+	switch (stationType) {
+	case "bus":
+		imageLocation += "bus_alt.png";
+		break;
+	case "rail":
+		imageLocation += "train_alt.png";
+		break;
+	case "tram":
+		imageLocation += "tram_alt.png";
+		break;
+	}
+	
+	return imageLocation;
+}
+
 

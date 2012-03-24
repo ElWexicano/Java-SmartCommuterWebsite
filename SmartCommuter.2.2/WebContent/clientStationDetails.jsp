@@ -111,6 +111,9 @@
 						
 						<div class="details">
 							<div id="header">Station Information</div>
+							
+							<input type="hidden" id="stationType" value="${station.company.mode}"/>
+							
 							<c:choose>
 								<c:when test="${station.company.name=='Bus Éireann'}">
 									<img class="stationlogo" src="img/company_logos/bus_eireann.png"/>
