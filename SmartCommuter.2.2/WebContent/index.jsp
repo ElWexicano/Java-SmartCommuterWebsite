@@ -7,106 +7,137 @@
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="galleria/galleria-1.2.6.js"></script>
+	<script src="js/gallery.js"></script>
 </head>
 <body>
 	<div class="main">
-		
+
 		<div class="header">
 			<div class="headerholder">
-				
-				
+
+
 				<div class="logo">
 					<img src="img/logo.png" width="35px"/>
-					<span class="title">SmartCommuter.ie</span>
+					<span class="title">SmartCommuter</span>
 				</div>
 
-				
+
 				<div class="menubar">
 					<ul>
-						<li class="active"><a href="index.jsp">Home</a></li>
+						<li class="active"><a href="">Home</a></li>
 						<li><a href="client">Client</a></li>
 						<li><a href="contact">Contact</a></li>
 					</ul>
 				</div>
-				
+
 			</div>
 		</div>
 
 
 		<div class="content">
-			
+
 			<div class="contentholder">
-				
+
 				<div id="sitedesc">
-					<h1>Public Transport App.</h1>
 					<p>
-						SmartCommuter is a public transport application for Android Smartphones. 
-						It Provides up to the minute information on public transport systems in Ireland. 
+						SmartCommuter provides up to the minute information on Public Transport Systems.
 					</p>
 				</div>
 				<div id="sitebanner">
 					<img src="img/android.png" alt="Android App" title="SmartCommuter for Android"/>
 				</div>
+
+
+				<h2>Why use SmartCommuter</h2>
+				
+				<div class="infobox">
+					<h3>
+						<span>E</span>xtensive Info
+					</h3>
+					<p>
+						SmartCommuter provides information for over 3500 Public Transport Stations for 
+						five of the largest Transport System in Ireland and is growing everyday.
+					</p>
+				</div>
+				
+				<div class="infobox">
+					<h3>
+						<span>B</span>us, Rail &#38; Tram
+					</h3>
+					<p>
+						SmartCommuter provides information for multiple transportation modes.
+					</p>
+				</div>
+				
+				<div class="infobox" style="margin-right: 0%">
+					<h3>
+						<span>E</span>ase of Access
+					</h3>
+					<p>
+						No more switching between applications to find information for different Public Transport Systems.
+					</p>
+				</div>
+				
+				<div class="infobox">
+					<h3>
+						<span>I</span>nstant Access
+					</h3>
+					<p>
+						SmartCommuter provides instant access to real time information
+						for Stations such as next arrival or departure.
+					</p>
+				</div>
+				
+				<div class="infobox">
+					<h3>
+						<span>A</span>wareness
+					</h3>
+					<p>
+						SmartCommuter can direct you to nearby Public Transport Stations, 
+						providing you with a sense of awareness for your location.
+					</p>
+				</div>
+				
+				<div class="infobox" style="margin-right: 0%">
+					<h3>
+						<span>F</span>avourites
+					</h3>
+					<p>
+						SmartCommuter allows you to save the your favourite Public Transport Stations 
+						so that you can quickly access them at anytime.
+					</p>
+				</div>
 				
 				
-				<h2>About the app</h2>
-				<p>
-					The application will give the user control of their commuting experience by giving them more choice on how
-					and when they use public transport. No longer will commuters be waiting and wondering when their bus will
-					arrive or if they have enough time to go to the shop before the trains departs. No more waiting at the bus stop
-					and looking at their watch wondering if the bus has already arrived and departed. With this application
-					commuters can use their Android Smartphones to see exactly how long till the bus arrives and the current
-					whereabouts of the bus or train.
-				</p>
+				<div class="featurebox">
+					<h3>Screenshot's</h3>
+					
+					<div id="screenshots"></div>
+				</div>
 				
-				<p>
-					It provides up to the minute public transport information for the following:
-				</p>
+				<div class="downloadbox">
+					<h3>Get SmartCommuter</h3>
+					<img src="http://placehold.it/290x50"/>
+					<h4>Scan this QR Code on your phone</h4>
+					<img src="http://placehold.it/128x128"/>
+				</div>
 				
-				<img class="transportlogo" src="img/company_logos/bus_eireann.png" alt="Bus Ãireann" title="Bus Ãireann"/>
-				<img class="transportlogo" src="img/company_logos/dublin_bus.png" alt="Dublin Bus" title="Dublin Bus"/>
-				<img class="transportlogo" src="img/company_logos/irish_rail.png" alt="Irish Rail" title="Irish Rail"/>
-				<img class="transportlogo" src="img/company_logos/jj_kavanagh.png" alt="JJ Kavanagh & Sons" title="JJ Kavanagh & Sons"/>
-				<img class="transportlogo" style="margin-right: 0" src="img/company_logos/luas.png" alt="Luas" title="Luas"/>
+				<h3>SmartCommuter Provides:</h3>
+
+				<img class="transportlogo" src="img/company_logos/bus_eireann.png" alt="Bus Éireann" title="Information for Bus Éireann"/>
+				<img class="transportlogo" src="img/company_logos/dublin_bus.png" alt="Dublin Bus" title="Information for Dublin Bus"/>
+				<img class="transportlogo" src="img/company_logos/irish_rail.png" alt="Irish Rail" title="Information for Irish Rail"/>
+				<img class="transportlogo" src="img/company_logos/jj_kavanagh.png" alt="JJ Kavanagh & Sons" title="Information for JJ Kavanagh & Sons"/>
+				<img class="transportlogo" style="margin-right: 0" src="img/company_logos/luas.png" alt="Luas" title="Information for Luas"/>
 				
-				<hr/>
-				
-				<h2>It's Features</h2>
-				<p>
-					Commuters will be able to view information on the different transport
-					stations, view timetables, view routes, view transportation modes on a map and
-					allow them to plan their journey. Using the Smartphoneâs built in GPS system
-					SmartCommuter can provide information about nearby stations such as when next
-					departure or arrival will happen and even provide directions to the station.
-				</p>
-				
-				<hr/>
-				
-				<h2>The Benefits</h2>
-				<p>SmartCommuter aims at giving it's user the following benefits:</p>
-				<ul>
-				  <li>Greater flexibility in how you decide to commute.</li>
-				  <li>Reduced uncertainty in Public Transport Systems.</li>
-				  <li>Instant access to wide range of Public Transport Information Systems.</li>
-				  <li>Ease of access to the some biggest Public Transport Systems in Ireland.</li>
-				</ul>
-				
-				<hr/>
-				
-				<h2>How to get the App.</h2>
-				<p>
-					The Android application can be downloaded by scanning the Quick Response Code below on your Android based Smartphone.
-				</p>
-				<p>
-					Alternatively it can be downloaded from the android Market.
-				</p>	
 			</div>
-			
+
 		</div>
-		
+
 	</div>
 
 	<jsp:include page="incFooter.html"/>
-
 </body>
 </html>

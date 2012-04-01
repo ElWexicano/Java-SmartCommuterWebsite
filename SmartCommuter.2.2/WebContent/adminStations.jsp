@@ -17,7 +17,7 @@
 				
 				<div class="logo">
 					<img src="img/logo.png" width="35px"/>
-					<span class="title">SmartCommuter.ie</span>
+					<span class="title">SmartCommuter</span>
 				</div>
 
 				
@@ -38,7 +38,6 @@
 			<div class="contentholder">
 				
 				<div id="sitedesc">
-					<h1>SmartCommuter Administrator</h1>
 					<p>
 						Use the Administrator to update information for
 						Public Transport Companies and their Stations.

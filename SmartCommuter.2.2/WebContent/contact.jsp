@@ -15,16 +15,14 @@
 		<div class="header">
 			<div class="headerholder">
 				
-				
 				<div class="logo">
 					<img src="img/logo.png" width="35px"/>
-					<span class="title">SmartCommuter.ie</span>
+					<span class="title">SmartCommuter</span>
 				</div>
 
-				
 				<div class="menubar">
 					<ul>
-						<li><a href="index.jsp">Home</a></li>
+						<li><a href="./">Home</a></li>
 						<li><a href="client">Client</a></li>
 						<li class="active"><a href="contact">Contact</a></li>
 					</ul>
@@ -33,17 +31,13 @@
 			</div>
 		</div>
 
-
 		<div class="content">
 			
 			<div class="contentholder">
 				
 				<div id="sitedesc">
-					<h1>Get in Touch</h1>
 					<p>
-						If you have a question or something that you would
-						like to share with SmartCommuter, then please get 
-						in touch and remember <b>your feedback is important</b> to us!
+						Get in touch with us at SmartCommuter. We look forward to hearing from you!
 					</p>
 				</div>
 				<div id="sitebanner">
@@ -51,7 +45,7 @@
 				</div>
 				
 				
-				<h2>How to get in touch</h2>
+				<h2>Contact Us</h2>
 				<p>
 					To get in touch you can fill in the form below or see the alternative
 					ways to get in touch, either way we will pleased to hear from you.
@@ -91,7 +85,7 @@
 				</form>
 				
 				
-				<h2>Alternative ways to get in touch</h2>
+				<h2>Alternative Methods</h2>
 				<p>
 					If you do not wish to use the form above to get in touch
 					you can drop us an email using the this address.<br/>

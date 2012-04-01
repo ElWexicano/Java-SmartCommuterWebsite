@@ -16,12 +16,12 @@
 				
 				<div class="logo">
 					<img src="img/logo.png" width="35px"/>
-					<span class="title">SmartCommuter.ie</span>
+					<span class="title">SmartCommuter</span>
 				</div>
 
 				<div class="menubar">
 					<ul>
-						<li><a href="index.jsp">Home</a></li>
+						<li><a href="./">Home</a></li>
 						<li><a href="client">Client</a></li>
 						<li><a href="contact">Contact</a></li>
 					</ul>
@@ -44,7 +44,7 @@
 					</p>
 					
 					<a class="adminloginbtn" href='<%= response.encodeURL("login.jsp") %>'>Try Again</a>
-					<a class="adminloginbtn" href='<%= response.encodeURL("index.jsp") %>'>Home Page</a>
+					<a class="adminloginbtn" href='<%= response.encodeURL("./") %>'>Home Page</a>
 				</div>
 				
 			</div>

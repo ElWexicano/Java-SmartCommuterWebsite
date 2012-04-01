@@ -16,12 +16,12 @@
 				
 				<div class="logo">
 					<img src="img/logo.png" width="35px"/>
-					<span class="title">SmartCommuter.ie</span>
+					<span class="title">SmartCommuter</span>
 				</div>
 
 				<div class="menubar">
 					<ul>
-						<li><a href="index.jsp">Home</a></li>
+						<li><a href="./">Home</a></li>
 						<li><a href="client">Client</a></li>
 						<li><a href="contact">Contact</a></li>
 					</ul>

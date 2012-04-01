@@ -22,13 +22,13 @@
 				
 				<div class="logo">
 					<img src="img/logo.png" width="35px"/>
-					<span class="title">SmartCommuter.ie</span>
+					<span class="title">SmartCommuter</span>
 				</div>
 
 				
 				<div class="menubar">
 					<ul>
-						<li><a href="index.jsp">Home</a></li>
+						<li><a href="./">Home</a></li>
 						<li class="active"><a href="client">Client</a></li>
 						<li><a href="contact">Contact</a></li>
 					</ul>
@@ -43,11 +43,8 @@
 			<div class="contentholder">
 				
 				<div id="sitedesc">
-					<h1>SmartCommuter Web Client</h1>
 					<p>
-						Use the application through a web browser which 
-						allows you to get up to the minute information
-						for public transport systems in Ireland.
+						SmartCommuter Web Client provides up to the minute information on Public Transport Systems.
 					</p>
 				</div>
 				<div id="sitebanner">
@@ -55,7 +52,7 @@
 				</div>
 				
 				
-				<h2>About the Web Client</h2>
+				<h2>The Web Client</h2>
 				<p>
 					The smart commuter web client is an alternative way to get up to minute information
 					for public transport systems when your online. 
