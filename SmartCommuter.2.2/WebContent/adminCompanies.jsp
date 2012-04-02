@@ -25,6 +25,7 @@
 					<ul>
 						<li class="active"><a href="adminCompanies">Companies</a></li>
 						<li><a href="adminStations">Stations</a></li>
+						<li><a href="#">History</a></li>
 						<li><a href="adminExit">Exit</a></li>
 					</ul>
 				</div>

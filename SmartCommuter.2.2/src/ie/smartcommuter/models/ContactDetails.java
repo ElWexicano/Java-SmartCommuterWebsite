@@ -1,5 +1,10 @@
 package ie.smartcommuter.models;
 
+/**
+ * This class is used to create instances
+ * of Contact Details for Companies.
+ * @author Shane Bryan Doyle
+ */
 public class ContactDetails {
 
 	private String email;
@@ -39,5 +44,4 @@ public class ContactDetails {
 		this.twitter = twitter;
 	}
 
-	
 }

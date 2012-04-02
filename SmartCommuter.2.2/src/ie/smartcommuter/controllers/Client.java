@@ -13,7 +13,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-
+/**
+ * This controller is used to load the Web Client.
+ * @author Shane Bryan Doyle
+ */
 public class Client extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private List<Station> recentlyViewedStations = new ArrayList<Station>();

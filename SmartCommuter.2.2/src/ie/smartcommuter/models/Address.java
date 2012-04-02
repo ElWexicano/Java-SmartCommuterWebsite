@@ -1,5 +1,10 @@
 package ie.smartcommuter.models;
 
+/**
+ * The Address class is used to store details
+ * about an address.
+ * @author Shane Bryan Doyle
+ */
 public class Address {
 	
 	private String location;

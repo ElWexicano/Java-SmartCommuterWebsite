@@ -2,6 +2,7 @@ package ie.smartcommuter.controllers;
 
 import ie.smartcommuter.client.RealTimeClient;
 import ie.smartcommuter.models.BeanUtils;
+import ie.smartcommuter.models.DatabaseManager;
 import ie.smartcommuter.models.Station;
 import ie.smartcommuter.service.RealTimeStub.StationData;
 
@@ -16,6 +17,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+/**
+ * This controller is used to load the Station
+ * Detals screen.
+ * @author Shane Bryan Doyle
+ */
 public class StationDetails extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	List<Station> recentlyViewedStations = new ArrayList<Station>();
@@ -28,8 +34,11 @@ public class StationDetails extends HttpServlet {
 		Integer stationId = new Integer(request.getParameter("stationid"));
 
 		if(stationId!=null){
-			Station station = BeanUtils.getStationDetails(stationId);
-
+			DatabaseManager databaseManager = new DatabaseManager();
+			databaseManager.openConnection();
+			Station station = databaseManager.getStationDetails(stationId);
+			databaseManager.closeConnection();
+			
             List<StationData> stationData = null;
 			try {
 				stationData = RealTimeClient.getStationData(RealTimeClient.getStub(),

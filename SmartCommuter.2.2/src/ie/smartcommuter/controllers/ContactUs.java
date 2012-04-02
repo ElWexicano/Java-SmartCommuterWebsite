@@ -11,6 +11,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+/**
+ * This controller is used to load the Contact Us
+ * screen.
+ * @author Shane Bryan Doyle
+ */
 public class ContactUs extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private String address = "contact.jsp";

@@ -1,7 +1,8 @@
-@charset "utf-8";
 /*
-	Design by Shane Doyle
+	Design by Shane Bryan Doyle
 */
+@charset "utf-8";
+
 @font-face {
     font-family: 'MuseoSlab500';
     src: url('fonts/Museo_Slab_500-webfont.eot');
@@ -182,7 +183,7 @@ h3 {
 }
 
 #socialnetworks {
-	width: 160px;
+	width: 170px;
 }
 
 #socialnetworks img {
@@ -250,11 +251,10 @@ h3 {
 
 .transportlogo {
 	background: #fff;
-	border: 1px solid #ccc;
+	border: 1px solid #aaa;
 	margin-right: 35px;
 	padding: 5px;
 	width: 140px;
-
 	-webkit-box-shadow: 5px 5px 5px #ccc;
 	-moz-box-shadow: 5px 5px 5px #ccc;
 	box-shadow: 5px 5px 5px #ccc;
@@ -311,7 +311,7 @@ h3 {
 	padding: 20px;
 	text-align: center;
 	width: 300px;
-	border: #ccc;
+	border: #aaa;
 
 	-webkit-box-shadow: 5px 5px 5px #ccc;
 	-moz-box-shadow: 5px 5px 5px #ccc;

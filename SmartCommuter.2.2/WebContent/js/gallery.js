@@ -1,4 +1,9 @@
-
+/**
+ * This file contains the javascript methods
+ * that are used to display the Screenshot's
+ * gallery on the home page.
+ * @author Shane Bryan Doyle
+ */
 
 $(document).ready(function() {
 	Galleria.loadTheme('galleria/theme/galleria.classic.min.js');

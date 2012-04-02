@@ -1,6 +1,6 @@
 package ie.smartcommuter.controllers;
 
-import ie.smartcommuter.models.BeanUtils;
+import ie.smartcommuter.models.DatabaseManager;
 import ie.smartcommuter.models.Station;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,6 +12,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+/**
+ * This controller is used to search for stations.
+ * @author Shane Bryan Doyle
+ */
 public class StationSearch extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
@@ -28,7 +32,10 @@ public class StationSearch extends HttpServlet {
 		Boolean searchRail = request.getParameter("railstation") != null ? true : false;
 		Boolean searchTram = request.getParameter("tramstation") != null ? true : false;
 
-		searchResultStations = BeanUtils.SearchStations(stationName, searchBus, searchRail, searchTram);
+		DatabaseManager databaseManager = new DatabaseManager();
+		databaseManager.openConnection();
+		searchResultStations = databaseManager.searchStations(stationName, searchBus, searchRail, searchTram);
+		databaseManager.closeConnection();
 		
 		HttpSession mySession = request.getSession(true);
 		recentlyViewedStations = (List<Station>) mySession.getAttribute("recentlyViewedStations");

@@ -1,5 +1,11 @@
 package ie.smartcommuter.models;
 
+/**
+ * The Captcha class is used to generate
+ * Captcha's that are being used in the
+ * contact us form.
+ * @author Shane Bryan Doyle
+ */
 public class Captcha {
 	
 	private String question;
@@ -18,6 +24,10 @@ public class Captcha {
 		this.answer = answer;
 	}
 	
+	/**
+	 * This method is used to generate
+	 * random Captcha's.
+	 */
 	public void generate() {
 		
 		int x = (int)(Math.random()*200);

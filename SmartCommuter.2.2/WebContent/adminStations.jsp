@@ -25,6 +25,7 @@
 					<ul>
 						<li><a href="adminCompanies">Companies</a></li>
 						<li class="active"><a href="adminStations">Stations</a></li>
+						<li><a href="#">History</a></li>
 						<li><a href="adminExit">Exit</a></li>
 					</ul>
 				</div>
@@ -93,7 +94,9 @@
 								
 								<label class="label" for="company">Company</label>
 								<select class="drop" name="company" id="company">
-									<option>Value</option>
+								<c:forEach items="${companies}" var="company">
+									<option>${company.name}</option>
+								</c:forEach>
 								</select>
 								
 								<label class="label" for="apicode">API Code</label>

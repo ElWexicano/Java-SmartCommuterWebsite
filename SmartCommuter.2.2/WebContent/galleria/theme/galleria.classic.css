@@ -7,6 +7,7 @@
 .galleria-container {
     position: relative;
     overflow: hidden;
+    
 }
 .galleria-container img {
     -moz-user-select: none;
@@ -20,6 +21,10 @@
     left: 10px;
     right: 10px;
     overflow:hidden;
+    border: 1px solid #aaa;
+	-webkit-box-shadow: 5px 5px 5px #ccc;
+	-moz-box-shadow: 5px 5px 5px #ccc;
+	box-shadow: 5px 5px 5px #ccc;
 }
 .galleria-thumbnails-container {
     height: 50px;
@@ -38,7 +43,7 @@
     width: 60px;
     background: #000;
     margin: 0 5px 0 0;
-    border: 1px solid #000;
+    border: 1px solid #aaa;
     float: left;
     cursor: pointer;
 }

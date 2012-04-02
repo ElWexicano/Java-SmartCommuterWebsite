@@ -1,4 +1,12 @@
 /**
+ * This file contains the javascript methods
+ * used throughout the SmartCommuter Web Client
+ * and Site.
+ * @author Shane Bryan Doyle
+ */
+
+
+/**
  * This method is used to display the 
  * "Type the Station Name" message in
  * the Station Name textbox in Search
@@ -96,14 +104,15 @@ function validateContactForm() {
 	return returnValue;
 }
 
-
+/**
+ * This method is used to reset the Web Client search form.
+ */
 function resetStationSearchForm() {
 	document.getElementById('busstation').checked = true;
 	document.getElementById('railstation').checked = true;
 	document.getElementById('tramstation').checked = true;
 	document.getElementById('stationname').value = "Type the Station Name";
 }
-
 
 /**
  * This method is used to reset the contact us
@@ -134,7 +143,6 @@ function resetContactForm() {
 	captcha.style.marginRight = "500px";
 	captcha.value = "";
 }
-
 
 /**
  * This method is used to validate
@@ -231,7 +239,6 @@ function initialize(lat,lon) {
     
     console.log(marker);
   }
-
 
 /**
  * This method is used to get the station

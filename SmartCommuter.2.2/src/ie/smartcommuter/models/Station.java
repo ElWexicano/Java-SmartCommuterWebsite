@@ -2,6 +2,11 @@ package ie.smartcommuter.models;
 
 import java.util.List;
 
+/**
+ * This class is used to create instances of
+ * Stations.
+ * @author Shane Bryan Doyle
+ */
 public class Station {
 	
 	private int id;
