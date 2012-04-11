@@ -31,7 +31,7 @@ public class DatabaseManager {
 		Connection connection = null;
 		
 		try {
-			connection = DriverManager.getConnection("jdbc:sqlite:database/smartcommuter.db");
+			connection = DriverManager.getConnection("jdbc:sqlite:../databases/smartcommuter.db");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} 
