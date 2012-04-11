@@ -2,7 +2,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 <head>
-	<title>SmartCommuter.ie - Admin</title>
+	<title>SmartCommuter - Admin</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
@@ -40,7 +40,7 @@
 				
 				<div id="sitedesc">
 					<p>
-						Use the Administrator to update information for
+						Use the Administrator to update information for 
 						Public Transport Companies and their Stations.
 					</p>
 				</div>
@@ -50,7 +50,8 @@
 				
 				<h2>About the Administrator</h2>
 				<p>
-					The SmartCommuter Companies Administrator allows you to add, delete and modify Public Transport Companies. 
+					The SmartCommuter Companies Administrator allows you 
+					to add, delete and modify Public Transport Companies.
 				</p>
 				
 				<div id="webclient">
@@ -134,9 +135,9 @@
 				
 				<h2>Warning</h2>
 				<p>
-					All changes made using the administrator will be represented in the 
-					database and the Web Client so use caution when updating or removing
-					information.
+					All changes made using the administrator will be 
+					represented in the database and the Web Client so 
+					use caution when updating or removing information.
 				</p>
 				
 			</div>

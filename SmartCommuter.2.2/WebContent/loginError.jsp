@@ -4,7 +4,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>SmartCommuter.ie - Admin Login Failed</title>
+	<title>SmartCommuter - Admin Login Failed</title>
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>

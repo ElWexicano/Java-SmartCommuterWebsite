@@ -4,7 +4,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>SmartCommuter.ie - Admin Login</title>
+	<title>SmartCommuter - Admin Login</title>
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
@@ -41,8 +41,7 @@
 					<h2>Login Required</h2>
 					
 					<p>
-						To use the administrator feature use must first login
-						using a valid username and password.
+						To use the administrator feature use must first login using a valid username and password
 					</p>
 						
 					<form method="POST" action='<%= response.encodeURL("j_security_check") %>'>

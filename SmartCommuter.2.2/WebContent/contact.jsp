@@ -3,7 +3,7 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<title>SmartCommuter.ie</title>
+	<title>SmartCommuter</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
@@ -37,7 +37,8 @@
 				
 				<div id="sitedesc">
 					<p>
-						Get in touch with us at SmartCommuter. We look forward to hearing from you!
+						Get in touch with us at SmartCommuter. We 
+						look forward to hearing from you!
 					</p>
 				</div>
 				<div id="sitebanner">
@@ -47,8 +48,9 @@
 				
 				<h2>Contact Us</h2>
 				<p>
-					To get in touch you can fill in the form below or see the alternative
-					ways to get in touch, either way we will pleased to hear from you.
+					To get in touch you can fill in the form below 
+					or see the alternative ways to get in touch, 
+					either way we will be pleased to hear from you.
 				</p>
 				
 
@@ -87,11 +89,12 @@
 				
 				<h2>Alternative Methods</h2>
 				<p>
-					If you do not wish to use the form above to get in touch
-					you can drop us an email using the this address.<br/>
-					Otherwise you can get in touch with using your Facebook or
-					Twitter account. See the bottom of the page for our social
-					network accounts.
+					If you do not wish to use the form above to 
+					get in touch you can drop us an email using 
+					this address. Otherwise you can get in touch 
+					with us using your Facebook or Twitter 
+					account. See the bottom of the page for our 
+					social network accounts.
 				</p>
 				
 			</div>

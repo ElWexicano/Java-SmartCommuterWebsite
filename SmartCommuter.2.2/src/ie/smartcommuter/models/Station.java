@@ -21,7 +21,7 @@ public class Station {
 		return name;
 	}
 	public void setName(String name) {
-		this.name = name;
+		this.name = name.replaceAll("á", "a");
 	}
 	public String getApiCode() {
 		return apiCode;

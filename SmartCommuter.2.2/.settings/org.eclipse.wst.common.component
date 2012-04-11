@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="SmartCommuter.2.0">
+    <wb-module deploy-name="SmartCommuter">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="java-output-path" value="/SmartCommuter.2.0/build/classes"/>
-        <property name="context-root" value="SmartCommuter.2.0"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/test"/>
+        <property name="java-output-path" value="/SmartCommuter/build/classes"/>
+        <property name="context-root" value="SmartCommuter"/>
     </wb-module>
 </project-modules>

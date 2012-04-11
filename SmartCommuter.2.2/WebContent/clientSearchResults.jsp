@@ -2,7 +2,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 <head>
-	<title>SmartCommuter.ie</title>
+	<title>SmartCommuter</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
@@ -37,17 +37,20 @@
 				
 				<div id="sitedesc">
 					<p>
-						SmartCommuter Web Client provides up to the minute information on Public Transport Systems.
+						SmartCommuter Web Client provides up to the 
+						minute information on Public Transport Systems.
 					</p>
 				</div>
 				<div id="sitebanner">
 					<img src="img/android.png" alt="Android App" title="SmartCommuter for Android"/>
 				</div>
 				
+				
 				<h2>The Web Client</h2>
 				<p>
-					The smart commuter web client is an alternative way to get up to minute information
-					for public transport systems when your online. 
+					The SmartCommuter Web Client is an alternative 
+					way to get up to minute information for public 
+					transport systems when your online.
 				</p>
 				
 				<div id="webclient">
@@ -155,10 +158,10 @@
 				
 				<h2>Disclaimer</h2>
 				<p>
-					SmartCommuter.ie does not claim responsibility for the real
-					time information shown for each public transport station
-					and might be times when this information may be not be exactly
-					correct.
+					SmartCommuter does not claim responsibility for 
+					the real time information shown for each public 
+					transport station and there might be times when 
+					this information may  not be exactly correct.
 				</p>
 				
 			</div>

@@ -253,17 +253,15 @@ function getStationMarker() {
 	
 	switch (stationType) {
 	case "bus":
-		imageLocation += "bus_alt.png";
+		imageLocation += "map_ic_bus.png";
 		break;
 	case "rail":
-		imageLocation += "train_alt.png";
+		imageLocation += "map_ic_train.png";
 		break;
 	case "tram":
-		imageLocation += "tram_alt.png";
+		imageLocation += "map_ic_tram.png";
 		break;
 	}
 	
 	return imageLocation;
 }
-
-

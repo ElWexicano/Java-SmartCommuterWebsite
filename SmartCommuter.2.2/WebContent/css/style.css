@@ -241,7 +241,7 @@ h3 {
 .contentholder {
 	margin: 0 auto;
 	min-height: 100%;
-	padding: 0 20px 60px;
+	padding: 0 20px 30px;
 	width: 920px;
 }
 
@@ -253,6 +253,7 @@ h3 {
 	background: #fff;
 	border: 1px solid #aaa;
 	margin-right: 35px;
+	margin-bottom: 60px;
 	padding: 5px;
 	width: 140px;
 	-webkit-box-shadow: 5px 5px 5px #ccc;
@@ -436,7 +437,7 @@ form fieldset {
 	margin-left: 20px;
 }
 
-#webclient form .button,#contactus .button {
+#webclient form .button,#contactus .button{
 	background: #4d4d4d;
 	border: 1px solid #aaa;
 	color: #ccc;
@@ -452,13 +453,13 @@ form fieldset {
 	width: 135px;
 }
 
-#webclient form .button:hover,#contactus .button:hover {
+#webclient form .button:hover,#contactus .button:hover{
 	background: #363737;
 	color: #fff;
 	text-decoration: none;
 }
 
-#webclient form .button:active,#contactus .button:active {
+#webclient form .button:active,#contactus .button:active
 	background: #363737;
 	border: 1px solid #90b831;
 	color: #90b831;
@@ -478,6 +479,7 @@ form fieldset {
 #webclient .stationlist,#webclient .live {
 	border-collapse: collapse;
 	width: 100%;
+	overflow-x:hidden;
 }
 
 #webclient .stationlist td,#webclient .live td {
@@ -548,9 +550,6 @@ form fieldset {
 	overflow: hidden;
 	padding: 0 10px;
 
-	-webkit-box-shadow: 5px 5px 5px #ccc;
-	-moz-box-shadow: 5px 5px 5px #ccc;
-	box-shadow: 5px 5px 5px #ccc;
 	text-align: center;
 	width: 380px;
 }
@@ -562,7 +561,8 @@ form fieldset {
 	height: 245px;
 	margin-bottom: 10px;
 	width: 494px;
-
+	overflow:hidden;
+	
 	-webkit-box-shadow: 5px 5px 5px #ccc;
 	-moz-box-shadow: 5px 5px 5px #ccc;
 	box-shadow: 5px 5px 5px #ccc;
@@ -574,6 +574,7 @@ form fieldset {
 	float: right;
 	height: 242px;
 	width: 494px;
+	overflow-x:hidden;
 
 	-webkit-box-shadow: 5px 5px 5px #ccc;
 	-moz-box-shadow: 5px 5px 5px #ccc;
@@ -792,9 +793,36 @@ form fieldset {
 	width: 145px;
 }
 
-#adminlogin .adminloginbtn:active {
+#adminlogin .adminloginbtn:active{
 	background: #363737;
 	border: 1px solid #90b831;
 	color: #90b831;
 	outline: none;
 }
+
+.qrcode {
+	width:128px;
+	height:128px;
+}
+
+.downloadButton {
+	font-size: 15px;
+	color: #cccccc;
+	padding: 10px 20px;
+	background: #4d4d4d;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	border: 1px solid #aaa;
+}
+
+.downloadButton:hover { 
+	cursor:pointer;	
+	color: #ffffff;
+}
+
+.downloadButton:active {
+	background: #363737;
+	border: 1px solid #90b831;
+	color: #90b831;
+	outline: none;
+}
+

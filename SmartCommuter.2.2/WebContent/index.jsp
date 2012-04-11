@@ -3,13 +3,24 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-	<title>SmartCommuter.ie</title>
+	<title>SmartCommuter</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script src="galleria/galleria-1.2.6.js"></script>
 	<script src="js/gallery.js"></script>
+	<script type="text/JavaScript">
+		/**
+		 * This method is used to download the
+		 * SmartCommuter Application
+		 */
+		function downloadSmartCommuter() {
+			var url = "http://dl.dropbox.com/u/5463504/SmartCommuter.apk";
+			window.open(url,'Download');
+		}
+	</script>
+	
 </head>
 <body>
 	<div class="main">
@@ -57,8 +68,9 @@
 						<span>E</span>xtensive Info
 					</h3>
 					<p>
-						SmartCommuter provides information for over 3500 Public Transport Stations for 
-						five of the largest Transport System in Ireland and is growing everyday.
+						SmartCommuter provides information for over 3500 
+						Public Transport Stations for five of the largest 
+						Transport System in Ireland and is growing everyday.
 					</p>
 				</div>
 				
@@ -67,7 +79,8 @@
 						<span>B</span>us, Rail &#38; Tram
 					</h3>
 					<p>
-						SmartCommuter provides information for multiple transportation modes.
+						SmartCommuter provides information for multiple 
+						transportation modes.
 					</p>
 				</div>
 				
@@ -76,7 +89,8 @@
 						<span>E</span>ase of Access
 					</h3>
 					<p>
-						No more switching between applications to find information for different Public Transport Systems.
+						No more switching between applications to find 
+						information for different Public Transport Systems.
 					</p>
 				</div>
 				
@@ -85,8 +99,9 @@
 						<span>I</span>nstant Access
 					</h3>
 					<p>
-						SmartCommuter provides instant access to real time information
-						for Stations such as next arrival or departure.
+						SmartCommuter provides instant access to real 
+						time information for Stations such as next 
+						arrival or departure.
 					</p>
 				</div>
 				
@@ -95,8 +110,9 @@
 						<span>A</span>wareness
 					</h3>
 					<p>
-						SmartCommuter can direct you to nearby Public Transport Stations, 
-						providing you with a sense of awareness for your location.
+						SmartCommuter can direct you to nearby Public 
+						Transport Stations, providing you with a 
+						sense of awareness for your location.
 					</p>
 				</div>
 				
@@ -105,8 +121,9 @@
 						<span>F</span>avourites
 					</h3>
 					<p>
-						SmartCommuter allows you to save the your favourite Public Transport Stations 
-						so that you can quickly access them at anytime.
+						SmartCommuter allows you to save your favourite 
+						Public Transport Stations so that you can 
+						quickly access them at anytime.
 					</p>
 				</div>
 				
@@ -119,9 +136,11 @@
 				
 				<div class="downloadbox">
 					<h3>Get SmartCommuter</h3>
-					<img src="http://placehold.it/290x50"/>
+					
+					<input class="downloadButton" type="button" value="Download SmartCommuter" onclick="downloadSmartCommuter()">
+					
 					<h4>Scan this QR Code on your phone</h4>
-					<img src="http://placehold.it/128x128"/>
+					<img class="qrcode" src="img/qr_code.png" title="Scan the QR Code to download SmartCommuter on your phone"/>
 				</div>
 				
 				<h3>SmartCommuter Provides:</h3>
