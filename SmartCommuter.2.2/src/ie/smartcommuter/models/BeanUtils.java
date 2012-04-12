@@ -51,7 +51,7 @@ public class BeanUtils {
 
 		String companyName = station.getCompany().getName();
 		
-		if(companyName.equals("Bus Éireann")) {
+		if(companyName.equals("Bus Eireann")) {
 			return "BusEireann";
 		} else if(companyName.equals("Dublin Bus")) {
 			return "DublinBus";
