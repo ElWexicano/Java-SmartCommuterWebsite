@@ -114,7 +114,7 @@
 							<input type="hidden" id="stationType" value="${station.company.mode}"/>
 							
 							<c:choose>
-								<c:when test="${station.company.name=='Bus Éireann'}">
+								<c:when test="${station.company.name=='Bus Eireann'}">
 									<img class="stationlogo" src="img/company_logos/bus_eireann.png"/>
 								</c:when>
 								<c:when test="${station.company.name=='Dublin Bus'}">

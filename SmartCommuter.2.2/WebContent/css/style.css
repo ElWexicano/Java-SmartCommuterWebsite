@@ -1,17 +1,14 @@
 /*
-	Design by Shane Bryan Doyle
-*/
+Design by Shane Bryan Doyle
+ */
 @charset "utf-8";
 
 @font-face {
-    font-family: 'MuseoSlab500';
-    src: url('fonts/Museo_Slab_500-webfont.eot');
-    src: url('fonts/Museo_Slab_500-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Museo_Slab_500-webfont.woff') format('woff'),
-         url('fonts/Museo_Slab_500-webfont.ttf') format('truetype'),
-         url('fonts/Museo_Slab_500-webfont.svg#MuseoSlab500') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'MuseoSlab500';
+	src: url('fonts/Museo_Slab_500-webfont.eot');
+	src: url('fonts/Museo_Slab_500-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/Museo_Slab_500-webfont.woff') format('woff'), url('fonts/Museo_Slab_500-webfont.ttf') format('truetype'), url('fonts/Museo_Slab_500-webfont.svg#MuseoSlab500') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 html,body {
@@ -54,6 +51,7 @@ h3 {
 	height: 50px;
 	line-height: 45px;
 	width: 100%;
+
 	-webkit-box-shadow: 5px 5px 5px #ccc;
 	-moz-box-shadow: 5px 5px 5px #ccc;
 	box-shadow: 5px 5px 5px #ccc;
@@ -256,6 +254,7 @@ h3 {
 	margin-bottom: 60px;
 	padding: 5px;
 	width: 140px;
+
 	-webkit-box-shadow: 5px 5px 5px #ccc;
 	-moz-box-shadow: 5px 5px 5px #ccc;
 	box-shadow: 5px 5px 5px #ccc;
@@ -437,7 +436,7 @@ form fieldset {
 	margin-left: 20px;
 }
 
-#webclient form .button,#contactus .button{
+#webclient form .button,#contactus .button {
 	background: #4d4d4d;
 	border: 1px solid #aaa;
 	color: #ccc;
@@ -453,13 +452,13 @@ form fieldset {
 	width: 135px;
 }
 
-#webclient form .button:hover,#contactus .button:hover{
+#webclient form .button:hover,#contactus .button:hover {
 	background: #363737;
 	color: #fff;
 	text-decoration: none;
 }
 
-#webclient form .button:active,#contactus .button:active
+#webclient form .button:active,#contactus .button:active {
 	background: #363737;
 	border: 1px solid #90b831;
 	color: #90b831;
@@ -468,18 +467,19 @@ form fieldset {
 
 #webclient .stationlist tr:nth-child(odd),#webclient .live tr:nth-child(odd) {
 	background-color: #eee;
-	font-size: 14px;
 }
 
 #webclient .stationlist tr:nth-child(even),#webclient .live tr:nth-child(even) {
 	background-color: #e5e4d7;
-	font-size: 14px;
 }
 
 #webclient .stationlist,#webclient .live {
 	border-collapse: collapse;
 	width: 100%;
-	overflow-x:hidden;
+
+	-ms-overflow-x: hidden;
+	overflow-x: hidden;
+	font-size: 14px;
 }
 
 #webclient .stationlist td,#webclient .live td {
@@ -549,7 +549,6 @@ form fieldset {
 	float: left;
 	overflow: hidden;
 	padding: 0 10px;
-
 	text-align: center;
 	width: 380px;
 }
@@ -561,8 +560,8 @@ form fieldset {
 	height: 245px;
 	margin-bottom: 10px;
 	width: 494px;
-	overflow:hidden;
-	
+	overflow: hidden;
+
 	-webkit-box-shadow: 5px 5px 5px #ccc;
 	-moz-box-shadow: 5px 5px 5px #ccc;
 	box-shadow: 5px 5px 5px #ccc;
@@ -574,7 +573,9 @@ form fieldset {
 	float: right;
 	height: 242px;
 	width: 494px;
-	overflow-x:hidden;
+
+	-ms-overflow-x: hidden;
+	overflow-x: hidden;
 
 	-webkit-box-shadow: 5px 5px 5px #ccc;
 	-moz-box-shadow: 5px 5px 5px #ccc;
@@ -726,6 +727,8 @@ form fieldset {
 	-moz-resize: none;
 	-webkit-resize: none;
 	-moz-resize: none;
+	-webkit-resize: none;
+	-moz-resize: none;
 	resize: none;
 	width: 450px;
 }
@@ -793,7 +796,7 @@ form fieldset {
 	width: 145px;
 }
 
-#adminlogin .adminloginbtn:active{
+#adminlogin .adminloginbtn:active {
 	background: #363737;
 	border: 1px solid #90b831;
 	color: #90b831;
@@ -801,8 +804,8 @@ form fieldset {
 }
 
 .qrcode {
-	width:128px;
-	height:128px;
+	width: 128px;
+	height: 128px;
 }
 
 .downloadButton {
@@ -814,8 +817,8 @@ form fieldset {
 	border: 1px solid #aaa;
 }
 
-.downloadButton:hover { 
-	cursor:pointer;	
+.downloadButton:hover {
+	cursor: pointer;
 	color: #ffffff;
 }
 
@@ -825,4 +828,3 @@ form fieldset {
 	color: #90b831;
 	outline: none;
 }
-
