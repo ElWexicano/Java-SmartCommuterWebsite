@@ -1,6 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<title>SmartCommuter</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
@@ -116,7 +117,7 @@
 				</div>
 				
 				<h2>Disclaimer</h2>
-				<p>
+				<p style="padding-bottom: 60px">
 					SmartCommuter does not claim responsibility for 
 					the real time information shown for each public 
 					transport station and there might be times when 

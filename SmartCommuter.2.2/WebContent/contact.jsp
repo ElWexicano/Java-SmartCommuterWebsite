@@ -88,7 +88,7 @@
 				
 				
 				<h2>Alternative Methods</h2>
-				<p>
+				<p style="padding-bottom: 60px">
 					If you do not wish to use the form above to 
 					get in touch you can drop us an email using 
 					this address. Otherwise you can get in touch 
